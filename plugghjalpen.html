@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head><script>window.__V0_SANDBOX_ID__="sb-5nehu9daba6q";window.__V0_CHAT_ID__="ionqwR0WQLB";(function SD(){try{if(!/\bFirefox\//.test(navigator.userAgent)||"u"<typeof PerformanceNavigationTiming)return;let e=Object.getOwnPropertyDescriptor(PerformanceResourceTiming.prototype,"transferSize");if(!e||!e.get)return;let t=e.get;Object.defineProperty(PerformanceNavigationTiming.prototype,"transferSize",{configurable:!0,get(){let e=t.call(this);if(0!==e||"back_forward"===this.type)return e;let r=window.next,n=r&&"string"==typeof r.version?r.version:"",i=/^16\.2\.(\d+)/.exec(n);return i&&Number(i[1])>=7?1:e}})}catch{}})();window.__V0_SOURCE_MAP_FRAME_ROOT__="file:///vercel/share/v0-project/.next/dev/static";;(function SM(e){let t=Symbol.for("__next_dev_bridge_runtime_observer__"),r=window[t],n=e||{},i=n.messageType||"next-dev-bridge:runtime",a=n.readyMessageType||"next-dev-bridge:runtime-ready",s=n.resetMessageType||"next-dev-bridge:runtime-reset",o=n.targetOrigin||"*",l=!1!==n.isAppDirectory,u="string"==typeof n.sourceMapEndpoint&&n.sourceMapEndpoint?n.sourceMapEndpoint:"",d="string"==typeof n.sourceMapFrameRoot&&n.sourceMapFrameRoot?n.sourceMapFrameRoot.replace(/\/+$/,""):"";if(r)return void f(a,{existing:!0,href:window.location.href,windowId:r.windowId});let c=1,p=`${Date.now()}-${Math.random().toString(36).slice(2)}`,h={errors:[]};function f(e,t){window.parent!==window&&window.parent.postMessage({type:e,...t},o)}async function m(e){let t={...e,id:c++,isFatal:!1,severity:"recoverable",at:new Date().toISOString()};h.errors=[...h.errors,t],f(i,{event:{type:"runtime:error",error:t,errors:h.errors},state:h,href:window.location.href,windowId:p}),u&&b(t).then(e=>{h.errors.some(e=>e.id===t.id)&&(t.mapped=e,h.errors=h.errors.map(e=>e.id===t.id?t:e),f(i,{event:{type:"runtime:error",error:t,errors:h.errors},state:h,href:window.location.href,windowId:p}))}).catch(()=>{})}function y(){0!==h.errors.length&&(h.errors=[],f(i,{event:{type:"runtime:cleared",errors:[]},state:h,href:window.location.href,windowId:p}))}function g(e){var t,r,n,i,a;let s,o,l,u;m((s=E((t=e).error,t.message||"Uncaught error"),o=t.filename||void 0,l=$(t.lineno),u=$(t.colno),{source:"error",name:s.name,message:s.message,stack:s.stack||(r=s.message,n=o,i=l,a=u,n&&i&&a?`${r}
+    at <anonymous> (${n}:${i}:${a})`:""),filename:o,line:l,column:u}))}function _(e){let t;m({source:"unhandledrejection",name:(t=E(e.reason,"Unhandled promise rejection")).name,message:t.message,stack:t.stack})}function v(e){let t=e.data;t&&"object"==typeof t&&t.type===s&&y()}function E(e,t){return e instanceof Error?{name:e.name||"Error",message:e.message||t,stack:e.stack||""}:e&&"object"==typeof e?{name:"string"==typeof e.name?e.name:"Error",message:"string"==typeof e.message?e.message:function(e){try{return JSON.stringify(e)}catch{return""}}(e)||t,stack:"string"==typeof e.stack?e.stack:""}:{name:"Error",message:"string"==typeof e?e:null==e?t:String(e),stack:""}}async function b(e){var t,r;let n=(t=String(e.stack).split("\n").map(L).filter(Boolean),r=e.filename,t.map(e=>({...e,file:function(e,t){var r,n;if("string"!=typeof e||0===e.length)return;let i=N(e);if(i)return T(i);if(r=e,/^[a-zA-Z][a-zA-Z\d+.-]*:/.test(r))return e;if(t&&D(t)===D(e)){let e=N(t);return e?T(e):t}let a=e.startsWith("_next/")?`/${e}`:e;return a.startsWith("/_next/")?T(a):!(n=a).includes("/")&&n.endsWith(".js")&&(n.startsWith("_")||n.includes("._.")||n.startsWith("node_modules_")||n.startsWith("turbopack-"))?T(`/_next/static/chunks/${a}`):e}(e.file,r)})));return{message:e.message,stack:e.stack,frames:n,mappedFrames:n.length>0?await S(n):[]}}async function S(e){let t=function(e){let t=[],r=new Set;for(let n of(A(t,r,e),[I,C,P])){let i=function(e,t){let r=!1,n=e.map(e=>{if("string"!=typeof e.file)return e;let n=t(e.file);return n&&n!==e.file?(r=!0,{...e,file:n}):e});return r?n:null}(e,n);i&&A(t,r,i)}return t}(e),r=null;for(let n of t){let t=await O(n);if(function(e){for(let n of e){var t,r;let e=k(t=n)&&"fulfilled"===t.status&&k(t.value)&&k(t.value.originalStackFrame)?t.value.originalStackFrame:null;if(!e||!0===e.ignored)continue;let i="string"!=typeof(r=e.file)?"":r.trim();if(!(!i||function(e){let t=M(e);return/\/(?:_next\/static|\.next\/dev\/static)\/chunks\//.test(t)||t.includes("/next/dist/compiled/")}(i)))return!0}return!1}(t.mappedFrames))return w(e,t.mappedFrames);if(r=t.mappedFrames,!t.shouldTryNextVariant)break}return r??R(e,"No stack frames to map.")}async function O(e){try{let t=function(e){try{return new URL(e,window.location.href).origin!==window.location.origin}catch{return!1}}(u),r={body:JSON.stringify({frames:e,isServer:!1,isEdgeServer:!1,isAppDirectory:l,sourceOrigin:window.location.origin}),cache:"no-store",credentials:t?"omit":"same-origin",method:"POST",mode:t?"cors":"same-origin"};t||(r.headers={"content-type":"application/json"});let n=await fetch(u,{...r});if(!n.ok||204===n.status){let t=await n.text().catch(()=>"");return{mappedFrames:R(e,t||"No original stack frame response from Next dev server."),shouldTryNextVariant:!1}}let i=await n.json();if(!Array.isArray(i))return{mappedFrames:R(e,"Invalid original stack frame response from Next dev server."),shouldTryNextVariant:!1};return{mappedFrames:w(e,i),shouldTryNextVariant:!0}}catch(t){return{mappedFrames:R(e,t instanceof Error?t.message:String(t)),shouldTryNextVariant:!1}}}function w(e,t){return e.map((e,r)=>t[r]||{status:"rejected",reason:"No original stack frame response for frame."})}function R(e,t){return e.map(()=>({status:"rejected",reason:t}))}function A(e,t,r){let n=JSON.stringify(r.map(e=>e.file));t.has(n)||(t.add(n),e.push(r))}function T(e){return d?`${d}/${e.replace(/^\/_next\/static\/?/,"")}`:e}function I(e){let t=x(e);return t?`.next/dev/static/${t.replace(/^\/_next\/static\/?/,"")}`:null}function C(e){let t=x(e);return t?t.replace(/^\/+/,""):null}function P(e){let t=x(e);if(!t)return null;try{return new URL(t,window.location.origin).href}catch{return null}}function x(e){var t,r;let n,i=M(e);if(i.startsWith("/_next/static/"))return i;let a=(r="/.next/dev/static/",-1===(n=(t=i).indexOf(r))?"":t.slice(n+r.length));return a?`/_next/static/${a}`:""}function N(e){if(e.startsWith("/_next/"))return e;if(e.startsWith("_next/"))return`/${e}`;try{let t=new URL(e);return t.pathname.startsWith("/_next/")?t.pathname:""}catch{return""}}function M(e){try{return new URL(e).pathname}catch{}return e.startsWith("/")?e:`/${e}`}function D(e){return e.split("?")[0].split(/[\\/]/).pop()||e}function k(e){return"object"==typeof e&&null!==e}function L(e){let t=e.trim();if(!t.startsWith("at "))return null;let r=t.slice(3),n="<anonymous>",i=r,a=r.indexOf("("),s=r.endsWith(")")?r.length-1:-1;-1!==a&&-1!==s&&s>a&&(n=r.slice(0,a).trim()||"<anonymous>",i=r.slice(a+1,s));let o=/^(.*):(\d+):(\d+)$/.exec(i);return o?{file:o[1],methodName:n,arguments:[],line1:Number(o[2]),column1:Number(o[3])}:null}function $(e){return"number"==typeof e&&Number.isFinite(e)&&e>0?e:void 0}window.addEventListener("error",g),window.addEventListener("unhandledrejection",_),window.addEventListener("message",v),window[t]={windowId:p,getSnapshot:()=>({errors:h.errors.slice()}),reset:y,stop:function(){window.removeEventListener("error",g),window.removeEventListener("unhandledrejection",_),window.removeEventListener("message",v),delete window[t]}},f(a,{existing:!1,href:window.location.href,windowId:p})})({"messageType":"next-dev-bridge:event","sourceMapEndpoint":"/_v0/next-dev-bridge-stack-frames","sourceMapFrameRoot":"file:///vercel/share/v0-project/.next/dev/static"});</script><script async src="/v0-runtime-dist.js"></script><style>nextjs-portal{display: none !important}</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plugghjälpen – skolverktyg på ett ställe</title>
+<meta name="description" content="Fokustimer, läxlista, anteckningar, glosförhör, mattequiz, miniräknare, omvandlare, procent, slump och textanalys – allt på en sida.">
+<meta name="theme-color" content="#f6f5f1">
+<style>
+:root{
+  --bg:#f6f5f1;--surface:#ffffff;--surface-2:#efede7;--text:#1c1b19;--muted:#6b6862;--border:#e3e0d8;
+  --accent:#1f7a5a;--on-accent:#ffffff;--danger:#c0392b;
+  --radius:14px;--pad:20px;--gap:16px;--fs:16px;
+  --mono:ui-monospace,"SF Mono","Cascadia Mono",Menlo,Consolas,monospace;
+  color-scheme:light;
+}
+[data-theme=dark]{--bg:#121211;--surface:#1c1b19;--surface-2:#272623;--text:#f2f0ea;--muted:#a3a097;--border:#34322e;--danger:#ef6b5b;color-scheme:dark}
+*{box-sizing:border-box}
+html{font-size:var(--fs)}
+body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5;-webkit-font-smoothing:antialiased}
+body.compact{--pad:14px;--gap:10px}
+body.no-motion *,body.no-motion *::before,body.no-motion *::after{transition:none!important;animation:none!important}
+h1,h2,h3{line-height:1.2;margin:0;text-wrap:balance}
+h1{font-size:1.9rem;letter-spacing:-.02em}
+h2{font-size:1.15rem}
+h3{font-size:1rem}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--on-accent);padding:8px 12px;border-radius:8px;z-index:100}
+.skip:focus{left:8px}
+.muted{color:var(--muted)}
+.small{font-size:.85rem}
+.mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+kbd{font-family:var(--mono);font-size:.72rem;padding:1px 6px;border:1px solid var(--border);border-bottom-width:2px;border-radius:6px;background:var(--surface);color:var(--muted);white-space:nowrap}
+svg.i{width:18px;height:18px;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Topbar */
+.topbar{position:sticky;top:0;z-index:20;display:flex;align-items:center;gap:12px;height:60px;padding:0 20px;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.01em;margin-right:auto}
+.logo{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:var(--accent);color:var(--on-accent);font-weight:800}
+.search-btn{display:flex;align-items:center;gap:10px;min-width:260px;height:38px;padding:0 10px 0 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);color:var(--muted);cursor:pointer}
+.search-btn span{margin-right:auto}
+.icon-btn{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer}
+.icon-btn:hover,.search-btn:hover{border-color:color-mix(in srgb,var(--accent) 50%,var(--border))}
+
+/* Layout */
+.layout{display:flex;min-height:calc(100vh - 60px)}
+nav.side{width:240px;flex-shrink:0;padding:16px 12px;border-right:1px solid var(--border);position:sticky;top:60px;height:calc(100vh - 60px);overflow-y:auto;display:flex;flex-direction:column;gap:2px}
+.nav-item{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border:0;border-radius:10px;background:transparent;text-align:left;cursor:pointer;color:var(--muted);font-weight:500}
+.nav-item span{flex:1}
+.nav-item:hover{background:var(--surface-2);color:var(--text)}
+.nav-item[aria-current=page]{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent)}
+.nav-item[aria-current=page] kbd{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 35%,transparent)}
+.nav-sep{height:1px;background:var(--border);margin:10px 4px}
+main{flex:1;min-width:0;padding:32px clamp(16px,4vw,48px) 64px}
+.tool{max-width:1040px;margin:0 auto;display:flex;flex-direction:column;gap:var(--gap);animation:fade .2s ease}
+@keyframes fade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.tool-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:4px}
+.tool-head p{margin-top:6px}
+
+/* Primitives */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--pad)}
+.row{display:flex;gap:10px;align-items:center}
+.wrap{flex-wrap:wrap}
+.between{justify-content:space-between}
+.center{justify-content:center}
+.col{display:flex;flex-direction:column;gap:10px}
+.grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:var(--gap)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:40px;padding:0 16px;border:1px solid var(--border);border-radius:10px;background:var(--surface);cursor:pointer;font-weight:600;white-space:nowrap;transition:transform .08s,background .15s}
+.btn:hover{background:var(--surface-2)}
+.btn:active{transform:scale(.97)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.primary:hover{background:color-mix(in srgb,var(--accent) 88%,#000)}
+.btn.danger{color:var(--danger)}
+.btn.sm{height:32px;padding:0 10px;font-size:.85rem}
+.btn.lg{height:48px;padding:0 28px;font-size:1.05rem}
+.btn.block{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+input[type=text],input[type=number],input[type=date],input[type=search],input:not([type]),select,textarea{width:100%;min-height:40px;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface);outline:none}
+input:focus,select:focus,textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+textarea{resize:vertical;line-height:1.55}
+label.field{display:flex;flex-direction:column;gap:6px;font-size:.85rem;font-weight:600;color:var(--muted)}
+.seg{display:inline-flex;gap:2px;padding:3px;border-radius:11px;background:var(--surface-2);flex-wrap:wrap}
+.seg button,.seg label{border:0;background:transparent;padding:6px 14px;border-radius:8px;cursor:pointer;font-weight:600;color:var(--muted);font-size:.9rem}
+.seg button[aria-selected=true],.seg button[aria-pressed=true],.seg input:checked+label{background:var(--surface);color:var(--text);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.chip{display:inline-flex;align-items:center;padding:2px 9px;border-radius:999px;font-size:.75rem;font-weight:600;background:var(--surface-2);color:var(--muted)}
+.chip.accent{background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.chip.warn{background:color-mix(in srgb,var(--danger) 14%,transparent);color:var(--danger)}
+.empty{text-align:center;padding:32px 16px;color:var(--muted)}
+.big-num{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:1.8rem;font-weight:700;letter-spacing:-.02em}
+
+/* Start */
+.hero{padding:28px var(--pad);border-radius:var(--radius);background:color-mix(in srgb,var(--accent) 10%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 20%,var(--border))}
+.hero h1{font-size:2.2rem;margin:4px 0 8px}
+.eyebrow{font-size:.8rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:var(--gap)}
+.stat .big-num{margin-top:4px}
+.tool-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.tool-card{display:flex;flex-direction:column;gap:6px;align-items:flex-start;text-align:left;padding:16px;border:1px solid var(--border);border-radius:var(--radius);background:var(--surface);cursor:pointer;transition:border-color .15s,transform .15s}
+.tool-card:hover{border-color:var(--accent);transform:translateY(-2px)}
+.tool-card .ic{display:grid;place-items:center;width:36px;height:36px;border-radius:10px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);margin-bottom:4px}
+.tool-card strong{display:flex;width:100%;justify-content:space-between;align-items:center}
+
+/* Timer */
+.timer-card{display:flex;flex-direction:column;align-items:center;gap:22px;padding:32px var(--pad)}
+.ring{position:relative;width:min(280px,70vw);aspect-ratio:1}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:10}
+.ring-bg{stroke:var(--surface-2)}
+.ring-fg{stroke:var(--accent);stroke-linecap:round;transition:stroke-dashoffset .3s linear}
+.ring-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.timer-display{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:clamp(2.6rem,9vw,3.8rem);font-weight:700;letter-spacing:-.03em}
+.dots{display:flex;gap:6px}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--surface-2)}
+.dots i.on{background:var(--accent)}
+
+/* Tasks */
+.task-form{display:grid;grid-template-columns:2fr 1fr 1fr auto;gap:10px}
+.task-list{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.task{display:flex;align-items:center;gap:12px;padding:12px 4px;border-bottom:1px solid var(--border)}
+.task:last-child{border-bottom:0}
+.task input[type=checkbox]{width:20px;height:20px;accent-color:var(--accent);flex-shrink:0;cursor:pointer}
+.task .t-body{flex:1;min-width:0}
+.task .t-text{font-weight:500;overflow-wrap:anywhere}
+.task.done .t-text{text-decoration:line-through;color:var(--muted)}
+.task .t-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:3px}
+.del{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:6px;border-radius:8px}
+.del:hover{color:var(--danger);background:var(--surface-2)}
+
+/* Notes */
+.notes{display:grid;grid-template-columns:260px 1fr;gap:var(--gap);min-height:480px}
+.note-list{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-direction:column;gap:2px;overflow-y:auto;max-height:420px}
+.note-item{width:100%;text-align:left;padding:8px 10px;border:0;border-radius:9px;background:transparent;cursor:pointer}
+.note-item:hover{background:var(--surface-2)}
+.note-item[aria-current=true]{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.note-item b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.note-item small{color:var(--muted)}
+.notes-editor{display:flex;flex-direction:column;gap:10px}
+.title-input{font-size:1.25rem!important;font-weight:700;border:0!important;padding:4px 0!important;box-shadow:none!important;background:transparent!important}
+.notes-editor textarea{flex:1;min-height:340px;border:0;padding:0;box-shadow:none;background:transparent;resize:none}
+
+/* Flashcards */
+.flashcard{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;min-height:240px;padding:28px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);cursor:pointer;text-align:center;transition:transform .2s,background .2s;user-select:none}
+.flashcard.flipped{background:color-mix(in srgb,var(--accent) 10%,var(--surface));border-color:color-mix(in srgb,var(--accent) 35%,var(--border))}
+.flashcard.pop{animation:pop .25s ease}
+@keyframes pop{50%{transform:scale(.97)}}
+.fc-text{font-size:clamp(1.6rem,5vw,2.4rem);font-weight:700;overflow-wrap:anywhere}
+.progress{height:8px;border-radius:999px;background:var(--surface-2);overflow:hidden}
+.progress>div{height:100%;background:var(--accent);width:0;transition:width .3s}
+
+/* Quiz */
+.quiz-q{font-family:var(--mono);font-size:clamp(2.2rem,8vw,3.4rem);font-weight:700;text-align:center;letter-spacing:-.02em}
+.quiz-input{max-width:260px;margin:0 auto;text-align:center;font-family:var(--mono);font-size:1.6rem!important;height:60px}
+.shake{animation:shake .3s}
+@keyframes shake{25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.flash-ok{animation:ok .4s}
+@keyframes ok{0%{box-shadow:0 0 0 0 color-mix(in srgb,var(--accent) 50%,transparent)}100%{box-shadow:0 0 0 14px transparent}}
+
+/* Calculator */
+.calc-wrap{display:grid;grid-template-columns:minmax(0,420px) 1fr;gap:var(--gap);align-items:start}
+.calc-display{padding:16px;border-radius:12px;background:var(--surface-2);text-align:right;margin-bottom:12px;min-height:96px;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden}
+.calc-expr{font-family:var(--mono);font-size:1.6rem;font-weight:600;overflow-wrap:anywhere}
+.calc-prev{font-family:var(--mono);color:var(--muted);min-height:1.5em}
+.calc-keys{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.calc-keys button{height:56px;border-radius:12px;border:1px solid var(--border);background:var(--surface);font-size:1.15rem;font-weight:600;cursor:pointer;font-family:var(--mono);transition:transform .06s,background .15s}
+.calc-keys button:hover{background:var(--surface-2)}
+.calc-keys button:active{transform:scale(.95)}
+.calc-keys .op{color:var(--accent)}
+.calc-keys .eq{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.history{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:2px;max-height:420px;overflow-y:auto}
+.history button{width:100%;text-align:right;padding:8px 10px;border:0;border-radius:8px;background:transparent;cursor:pointer;font-family:var(--mono)}
+.history button:hover{background:var(--surface-2)}
+.history small{display:block;color:var(--muted)}
+
+/* Converter */
+.conv{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:end}
+.conv .out{font-family:var(--mono);font-size:1.4rem;font-weight:700;min-height:40px}
+
+/* Random */
+.pick-result{min-height:70px;display:grid;place-items:center;font-size:clamp(1.6rem,5vw,2.2rem);font-weight:800;text-align:center;border-radius:12px;background:var(--surface-2)}
+.groups{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.group{padding:12px;border-radius:12px;background:var(--surface-2)}
+.group ol{margin:6px 0 0;padding-left:20px}
+.dice{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;min-height:64px}
+.die{width:60px;height:60px;border-radius:14px;background:var(--surface);border:2px solid var(--accent);display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(3,1fr);padding:9px}
+.die i{width:10px;height:10px;border-radius:50%;background:var(--accent);place-self:center;visibility:hidden}
+.die i.on{visibility:visible}
+.rolling{animation:roll .4s ease}
+@keyframes roll{0%{transform:rotate(0) scale(.8)}100%{transform:rotate(360deg) scale(1)}}
+
+/* Text */
+.text-stats{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.text-stats .card{padding:14px}
+.text-stats .big-num{font-size:1.5rem}
+
+/* Dialogs */
+dialog{border:0;padding:0;border-radius:18px;background:var(--surface);color:var(--text);box-shadow:0 24px 60px rgba(0,0,0,.25);width:min(640px,calc(100vw - 24px));max-height:calc(100vh - 48px)}
+dialog::backdrop{background:rgba(15,15,14,.45);backdrop-filter:blur(2px)}
+.dlg{padding:22px;display:flex;flex-direction:column;gap:18px;max-height:calc(100vh - 48px);overflow-y:auto}
+.dlg-head{display:flex;justify-content:space-between;align-items:center}
+.set-group{display:flex;flex-direction:column;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--border)}
+.set-group:last-child{border-bottom:0;padding-bottom:0}
+.set-group h3{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.set-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.set-row>span{display:flex;flex-direction:column}
+.set-row>span small{color:var(--muted);font-size:.8rem}
+.set-row input[type=number]{width:90px}
+.set-row select{width:auto}
+.switch{appearance:none;width:42px;height:24px;border-radius:999px;background:var(--border);position:relative;cursor:pointer;flex-shrink:0;transition:background .15s}
+.switch::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:#fff;transition:transform .15s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.switch:checked{background:var(--accent)}
+.switch:checked::after{transform:translateX(18px)}
+.swatches{display:flex;gap:8px}
+.swatches input{appearance:none;width:30px;height:30px;border-radius:50%;cursor:pointer;border:3px solid var(--surface);box-shadow:0 0 0 1px var(--border)}
+.swatches input:checked{box-shadow:0 0 0 2px var(--text)}
+input[type=range]{accent-color:var(--accent);width:160px}
+#palette{width:min(560px,calc(100vw - 24px));margin-top:12vh}
+.pal-input{border:0!important;box-shadow:none!important;font-size:1.05rem;padding:16px 18px!important;border-bottom:1px solid var(--border)!important;border-radius:0!important;background:transparent!important}
+.pal-list{list-style:none;margin:0;padding:8px;max-height:360px;overflow-y:auto}
+.pal-list li{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:10px;cursor:pointer}
+.pal-list li[aria-selected=true]{background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent)}
+.pal-list li span{flex:1}
+.pal-list li small{color:var(--muted)}
+.keys-table{width:100%;border-collapse:collapse}
+.keys-table td{padding:8px 0;border-bottom:1px solid var(--border)}
+.keys-table td:last-child{text-align:right}
+#toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--bg);padding:10px 18px;border-radius:12px;font-weight:600;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:200;max-width:calc(100vw - 32px)}
+#toast.show{opacity:1;transform:translateX(-50%)}
+
+@media (max-width:860px){
+  .layout{flex-direction:column}
+  nav.side{flex-direction:row;width:auto;height:auto;position:sticky;top:60px;z-index:10;overflow-x:auto;border-right:0;border-bottom:1px solid var(--border);background:var(--bg);padding:8px}
+  .nav-item{width:auto;flex-shrink:0}
+  .nav-item kbd,.nav-sep{display:none}
+  .search-btn{min-width:0}
+  .search-btn span,.search-btn kbd{display:none}
+  main{padding-top:20px}
+  .task-form{grid-template-columns:1fr 1fr}
+  .task-form #taskText{grid-column:1/-1}
+  .notes,.calc-wrap{grid-template-columns:1fr}
+  .conv{grid-template-columns:1fr}
+  .conv .swap{justify-self:center}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Hoppa till innehåll</a>
+
+<header class="topbar">
+  <div class="brand"><span class="logo" aria-hidden="true">P</span><span>Plugghjälpen</span></div>
+  <button class="search-btn" id="openPalette" type="button" aria-label="Sök verktyg (Ctrl+K)">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+    <span>Sök verktyg och kommandon…</span><kbd>Ctrl K</kbd>
+  </button>
+  <a class="icon-btn" href="/plugghjalpen.html" download="plugghjalpen.html" aria-label="Ladda ner HTML-filen" title="Ladda ner HTML-filen">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+  </a>
+  <button class="icon-btn" id="themeToggle" type="button" aria-label="Byt mellan ljust och mörkt tema">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+  </button>
+  <button class="icon-btn" id="openHelp" type="button" aria-label="Kortkommandon">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3"/><path d="M12 17h.01"/></svg>
+  </button>
+  <button class="icon-btn" id="openSettings" type="button" aria-label="Inställningar">
+    <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/></svg>
+  </button>
+</header>
+
+<div class="layout">
+  <nav class="side" id="nav" aria-label="Verktyg"></nav>
+
+  <main id="main" tabindex="-1">
+
+    <!-- START -->
+    <section class="tool" data-tool="start" aria-labelledby="h-start">
+      <div class="hero">
+        <p class="eyebrow" id="greetDate"></p>
+        <h1 id="h-start">Hej!</h1>
+        <p class="muted">Alla dina skolverktyg på ett ställe. Tryck <kbd>Ctrl</kbd> + <kbd>K</kbd> för att hoppa snabbt, eller <kbd>Alt</kbd> + <kbd>1–0</kbd> för att byta verktyg.</p>
+      </div>
+      <div class="stats">
+        <div class="card stat"><p class="small muted">Läxor kvar</p><p class="big-num" id="stTasks">0</p><p class="small muted" id="stTasksSub"></p></div>
+        <div class="card stat"><p class="small muted">Fokuspass idag</p><p class="big-num" id="stFocus">0</p><p class="small muted" id="stFocusSub"></p></div>
+        <div class="card stat"><p class="small muted">Glosor i listan</p><p class="big-num" id="stCards">0</p><p class="small muted">Redo att öva</p></div>
+        <div class="card stat"><p class="small muted">Anteckningar</p><p class="big-num" id="stNotes">0</p><p class="small muted">Sparas automatiskt</p></div>
+      </div>
+      <h2>Verktyg</h2>
+      <div class="tool-grid" id="toolGrid"></div>
+    </section>
+
+    <!-- TIMER -->
+    <section class="tool" data-tool="timer" aria-labelledby="h-timer" hidden>
+      <div class="tool-head"><div><h1 id="h-timer">Fokustimer</h1><p class="muted">Plugga i fokuspass med pauser emellan. <kbd>Mellanslag</kbd> startar/pausar, <kbd>R</kbd> återställer.</p></div></div>
+      <div class="card timer-card">
+        <div class="seg" role="tablist" aria-label="Läge" id="timerModes">
+          <button role="tab" data-mode="focus" type="button">Fokus</button>
+          <button role="tab" data-mode="short" type="button">Kort paus</button>
+          <button role="tab" data-mode="long" type="button">Lång paus</button>
+        </div>
+        <div class="ring">
+          <svg viewBox="0 0 220 220" aria-hidden="true"><circle class="ring-bg" cx="110" cy="110" r="96"/><circle class="ring-fg" id="ringFg" cx="110" cy="110" r="96" stroke-dasharray="603.19" stroke-dashoffset="0"/></svg>
+          <div class="ring-text"><div class="timer-display" id="timerDisplay" role="timer" aria-live="off">25:00</div><div class="muted" id="timerLabel">Fokus</div></div>
+        </div>
+        <div class="row center wrap">
+          <button class="btn primary lg" id="timerStart" type="button">Starta</button>
+          <button class="btn" id="timerReset" type="button">Återställ</button>
+          <button class="btn" id="timerSkip" type="button">Hoppa över</button>
+        </div>
+        <div class="col" style="align-items:center;gap:6px">
+          <div class="dots" id="timerDots" aria-hidden="true"></div>
+          <p class="small muted">Pass idag: <strong id="sessionsToday">0</strong> · Totalt: <strong id="sessionsTotal">0</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TASKS -->
+    <section class="tool" data-tool="tasks" aria-labelledby="h-tasks" hidden>
+      <div class="tool-head"><div><h1 id="h-tasks">Läxor</h1><p class="muted" id="taskSummary">Inga läxor än.</p></div>
+        <div class="seg" role="group" aria-label="Filter" id="taskFilters">
+          <button type="button" data-f="active">Att göra</button><button type="button" data-f="done">Klara</button><button type="button" data-f="all">Alla</button>
+        </div>
+      </div>
+      <form class="card task-form" id="taskForm">
+        <label class="sr-only" for="taskText">Uppgift</label><input id="taskText" placeholder="Vad ska göras? t.ex. Läs kapitel 4" required autocomplete="off">
+        <label class="sr-only" for="taskSubject">Ämne</label><input id="taskSubject" placeholder="Ämne" list="subjects" autocomplete="off">
+        <label class="sr-only" for="taskDue">Datum</label><input id="taskDue" type="date">
+        <button class="btn primary" type="submit">Lägg till</button>
+      </form>
+      <datalist id="subjects"><option>Matte</option><option>Svenska</option><option>Engelska</option><option>NO</option><option>SO</option><option>Biologi</option><option>Fysik</option><option>Kemi</option><option>Historia</option><option>Geografi</option><option>Samhälle</option><option>Religion</option><option>Teknik</option><option>Spanska</option><option>Tyska</option><option>Franska</option><option>Idrott</option><option>Bild</option><option>Musik</option><option>Slöjd</option></datalist>
+      <div class="card"><ul class="task-list" id="taskList"></ul>
+        <div class="row between" style="margin-top:8px"><span class="small muted" id="taskCount"></span><button class="btn sm" id="clearDone" type="button">Rensa klara</button></div>
+      </div>
+    </section>
+
+    <!-- NOTES -->
+    <section class="tool" data-tool="notes" aria-labelledby="h-notes" hidden>
+      <div class="tool-head"><div><h1 id="h-notes">Anteckningar</h1><p class="muted">Allt sparas automatiskt i din webbläsare.</p></div></div>
+      <div class="notes">
+        <aside class="card">
+          <button class="btn primary block" id="newNote" type="button">Ny anteckning</button>
+          <label class="sr-only" for="noteSearch">Sök anteckningar</label>
+          <input id="noteSearch" type="search" placeholder="Sök…" style="margin-top:10px">
+          <ul class="note-list" id="noteList"></ul>
+        </aside>
+        <div class="card notes-editor">
+          <label class="sr-only" for="noteTitle">Titel</label><input id="noteTitle" class="title-input" placeholder="Titel">
+          <label class="sr-only" for="noteBody">Innehåll</label><textarea id="noteBody" placeholder="Skriv här…"></textarea>
+          <div class="row between wrap"><span class="small muted" id="noteMeta"></span>
+            <div class="row"><button class="btn sm" id="noteDownload" type="button">Ladda ner .txt</button><button class="btn sm danger" id="noteDelete" type="button">Radera</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FLASHCARDS -->
+    <section class="tool" data-tool="cards" aria-labelledby="h-cards" hidden>
+      <div class="tool-head"><div><h1 id="h-cards">Glosor</h1><p class="muted">Skriv in dina glosor och förhör dig själv.</p></div>
+        <div class="seg" role="tablist" aria-label="Läge" id="cardTabs"><button role="tab" type="button" data-tab="practice">Öva</button><button role="tab" type="button" data-tab="edit">Redigera</button></div>
+      </div>
+      <div id="cardEdit" class="card col" hidden>
+        <label class="field" for="cardsInput">En glosa per rad – skilj fråga och svar med <span class="mono">-</span>, <span class="mono">=</span>, <span class="mono">:</span> eller tabb</label>
+        <textarea id="cardsInput" rows="12" spellcheck="false"></textarea>
+        <div class="row between wrap"><span class="small muted" id="cardsCount"></span><button class="btn primary" type="button" id="cardsStart">Börja öva</button></div>
+      </div>
+      <div id="cardPractice" class="col">
+        <div class="row between wrap">
+          <span class="small muted" id="fcStatus"></span>
+          <div class="row wrap">
+            <label class="row small" style="gap:6px;cursor:pointer"><input type="checkbox" id="fcReverse" class="switch"> Vänd riktning</label>
+            <button class="btn sm" type="button" id="fcRestart">Blanda och börja om</button>
+          </div>
+        </div>
+        <div class="progress" aria-hidden="true"><div id="fcProgress"></div></div>
+        <div class="flashcard" id="flashcard" role="button" tabindex="0" aria-live="polite">
+          <span class="chip accent" id="fcSide">Fråga</span>
+          <div class="fc-text" id="fcText"></div>
+          <span class="small muted" id="fcHint">Klicka eller tryck mellanslag för att vända</span>
+        </div>
+        <div class="row center wrap">
+          <button class="btn lg" type="button" id="fcWrong">Kunde inte <kbd>←</kbd></button>
+          <button class="btn primary lg" type="button" id="fcRight">Kunde <kbd>→</kbd></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ -->
+    <section class="tool" data-tool="quiz" aria-labelledby="h-quiz" hidden>
+      <div class="tool-head"><div><h1 id="h-quiz">Mattequiz</h1><p class="muted">Hur många hinner du på tid? Svaret registreras direkt när det är rätt.</p></div></div>
+      <div class="card row wrap">
+        <label class="field" style="flex:1;min-width:140px">Räknesätt
+          <select id="quizOp"><option value="+">Addition (+)</option><option value="-">Subtraktion (−)</option><option value="*" selected>Multiplikation (×)</option><option value="/">Division (÷)</option><option value="mix">Blandat</option></select></label>
+        <label class="field" style="flex:1;min-width:140px">Nivå
+          <select id="quizLevel"><option value="1">Lätt</option><option value="2" selected>Medel</option><option value="3">Svår</option></select></label>
+        <button class="btn primary" id="quizStart" type="button" style="align-self:flex-end">Starta</button>
+      </div>
+      <div class="card col" style="align-items:center;gap:18px;padding:32px var(--pad)">
+        <div class="row" style="gap:28px">
+          <div style="text-align:center"><p class="small muted">Tid</p><p class="big-num" id="quizTime">60</p></div>
+          <div style="text-align:center"><p class="small muted">Poäng</p><p class="big-num" id="quizScore">0</p></div>
+          <div style="text-align:center"><p class="small muted">Rekord</p><p class="big-num" id="quizBest">0</p></div>
+        </div>
+        <div class="quiz-q" id="quizQ" aria-live="polite">Tryck på Starta</div>
+        <label class="sr-only" for="quizInput">Ditt svar</label>
+        <input id="quizInput" class="quiz-input" inputmode="numeric" autocomplete="off" placeholder="?" disabled>
+        <p class="small muted" id="quizMsg">Tips: <kbd>Enter</kbd> hoppar över en fråga.</p>
+      </div>
+    </section>
+
+    <!-- CALC -->
+    <section class="tool" data-tool="calc" aria-labelledby="h-calc" hidden>
+      <div class="tool-head"><div><h1 id="h-calc">Miniräknare</h1><p class="muted">Använd tangentbordet direkt: siffror, <kbd>+ − * /</kbd>, <kbd>^</kbd>, <kbd>%</kbd>, <kbd>Enter</kbd>, <kbd>Esc</kbd>.</p></div></div>
+      <div class="calc-wrap">
+        <div class="card">
+          <div class="calc-display" aria-live="polite"><div class="calc-prev" id="calcPrev"></div><div class="calc-expr" id="calcExpr">0</div></div>
+          <div class="calc-keys" id="calcKeys"></div>
+        </div>
+        <div class="card"><div class="row between"><h2>Historik</h2><button class="btn sm" id="calcClearHist" type="button">Rensa</button></div><ul class="history" id="calcHistory" style="margin-top:10px"></ul></div>
+      </div>
+    </section>
+
+    <!-- CONVERT -->
+    <section class="tool" data-tool="convert" aria-labelledby="h-convert" hidden>
+      <div class="tool-head"><div><h1 id="h-convert">Omvandlare</h1><p class="muted">Byt enheter snabbt – perfekt för NO och matte.</p></div></div>
+      <div class="seg" role="tablist" aria-label="Kategori" id="convCats"></div>
+      <div class="card col">
+        <div class="conv">
+          <div class="col"><label class="field" for="convVal">Värde</label><input id="convVal" type="text" inputmode="decimal" value="1"><select id="convFrom" aria-label="Från enhet"></select></div>
+          <button class="btn swap" id="convSwap" type="button" aria-label="Byt plats på enheterna"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></svg></button>
+          <div class="col"><span class="field">Resultat</span><div class="out" id="convOut">–</div><select id="convTo" aria-label="Till enhet"></select></div>
+        </div>
+        <p class="small muted" id="convFormula"></p>
+      </div>
+      <div class="card"><h2>Alla enheter</h2><div class="text-stats" id="convAll" style="margin-top:12px"></div></div>
+    </section>
+
+    <!-- PERCENT -->
+    <section class="tool" data-tool="percent" aria-labelledby="h-percent" hidden>
+      <div class="tool-head"><div><h1 id="h-percent">Procent</h1><p class="muted">Fyra vanliga procentuppgifter – resultatet räknas ut medan du skriver.</p></div></div>
+      <div class="grid-2">
+        <div class="card col"><h2>Hur mycket är X % av Y?</h2><div class="row"><input data-p="a1" inputmode="decimal" placeholder="%" aria-label="Procent"><span class="muted">% av</span><input data-p="a2" inputmode="decimal" placeholder="Y" aria-label="Hela"></div><p class="big-num" id="pA">–</p></div>
+        <div class="card col"><h2>X är hur många % av Y?</h2><div class="row"><input data-p="b1" inputmode="decimal" placeholder="X" aria-label="Delen"><span class="muted">av</span><input data-p="b2" inputmode="decimal" placeholder="Y" aria-label="Hela"></div><p class="big-num" id="pB">–</p></div>
+        <div class="card col"><h2>Procentuell förändring</h2><div class="row"><input data-p="c1" inputmode="decimal" placeholder="Från" aria-label="Från"><span class="muted">→</span><input data-p="c2" inputmode="decimal" placeholder="Till" aria-label="Till"></div><p class="big-num" id="pC">–</p></div>
+        <div class="card col"><h2>Pris efter rabatt</h2><div class="row"><input data-p="d1" inputmode="decimal" placeholder="Pris" aria-label="Pris"><span class="muted">−</span><input data-p="d2" inputmode="decimal" placeholder="%" aria-label="Rabatt i procent"></div><p class="big-num" id="pD">–</p></div>
+      </div>
+    </section>
+
+    <!-- RANDOM -->
+    <section class="tool" data-tool="random" aria-labelledby="h-random" hidden>
+      <div class="tool-head"><div><h1 id="h-random">Slump</h1><p class="muted">Välj vem som börjar, dela in grupper eller kasta tärning.</p></div></div>
+      <div class="grid-2">
+        <div class="card col">
+          <h2>Namnväljare</h2>
+          <label class="field" for="names">Namn (ett per rad)</label>
+          <textarea id="names" rows="6" placeholder="Alva&#10;Noah&#10;Elsa&#10;Liam"></textarea>
+          <label class="row small" style="gap:8px;cursor:pointer"><input type="checkbox" id="noRepeat" class="switch"> Ingen upprepning förrän alla valts</label>
+          <div class="pick-result" id="pickResult" aria-live="polite">?</div>
+          <button class="btn primary" id="pickBtn" type="button">Välj någon</button>
+        </div>
+        <div class="card col">
+          <h2>Gruppindelning</h2>
+          <p class="small muted">Använder namnen i namnväljaren.</p>
+          <div class="row"><select id="groupMode" aria-label="Indelningssätt"><option value="count">Antal grupper</option><option value="size">Personer per grupp</option></select><input id="groupN" type="number" min="1" value="3" aria-label="Antal" style="width:100px"></div>
+          <button class="btn primary" id="groupBtn" type="button">Skapa grupper</button>
+          <div class="groups" id="groups"></div>
+        </div>
+        <div class="card col">
+          <div class="row between"><h2>Tärning</h2><select id="diceCount" aria-label="Antal tärningar" style="width:auto"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option></select></div>
+          <div class="dice" id="dice"></div>
+          <p class="center row small muted">Summa: <strong id="diceSum">–</strong></p>
+          <button class="btn primary" id="diceBtn" type="button">Kasta</button>
+        </div>
+        <div class="card col">
+          <h2>Slumptal och krona/klave</h2>
+          <div class="row"><input id="rMin" type="number" value="1" aria-label="Minsta"><span class="muted">till</span><input id="rMax" type="number" value="100" aria-label="Största"></div>
+          <div class="pick-result" id="rResult" aria-live="polite">–</div>
+          <div class="row"><button class="btn primary" id="rBtn" type="button" style="flex:1">Slumpa tal</button><button class="btn" id="coinBtn" type="button" style="flex:1">Krona eller klave</button></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEXT -->
+    <section class="tool" data-tool="text" aria-labelledby="h-text" hidden>
+      <div class="tool-head"><div><h1 id="h-text">Textanalys</h1><p class="muted">Klistra in din uppsats – få ordantal, lästid och LIX (läsbarhetsindex).</p></div>
+        <div class="row wrap"><button class="btn sm" data-tx="upper" type="button">VERSALER</button><button class="btn sm" data-tx="lower" type="button">gemener</button><button class="btn sm" data-tx="sentence" type="button">Stor bokstav</button><button class="btn sm" data-tx="copy" type="button">Kopiera</button><button class="btn sm danger" data-tx="clear" type="button">Rensa</button></div>
+      </div>
+      <label class="sr-only" for="textIn">Text att analysera</label>
+      <textarea id="textIn" class="card" rows="10" placeholder="Skriv eller klistra in text här…"></textarea>
+      <div class="text-stats" id="textStats"></div>
+      <div class="card"><h2>Vanligaste orden</h2><div class="row wrap" id="topWords" style="margin-top:10px"></div></div>
+    </section>
+
+  </main>
+</div>
+
+<!-- SETTINGS -->
+<dialog id="settings" aria-labelledby="h-settings">
+  <div class="dlg">
+    <div class="dlg-head"><h2 id="h-settings">Inställningar</h2><button class="icon-btn" data-close type="button" aria-label="Stäng"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+
+    <div class="set-group">
+      <h3>Profil</h3>
+      <div class="set-row"><span>Ditt namn<small>Visas i hälsningen på startsidan</small></span><input data-s="name" type="text" placeholder="Namn" style="max-width:200px"></div>
+      <div class="set-row"><span>Startverktyg<small>Vilket verktyg som öppnas först</small></span><select data-s="startTool" id="startToolSel"></select></div>
+      <div class="set-row"><span>Kom ihåg senaste verktyget<small>Öppna där du slutade</small></span><input data-s="rememberLast" type="checkbox" class="switch"></div>
+    </div>
+
+    <div class="set-group">
+      <h3>Utseende</h3>
+      <div class="set-row"><span>Tema</span>
+        <div class="seg" role="radiogroup" aria-label="Tema">
+          <input type="radio" name="theme" id="th-light" value="light" data-s="theme"><label for="th-light">Ljust</label>
+          <input type="radio" name="theme" id="th-dark" value="dark" data-s="theme"><label for="th-dark">Mörkt</label>
+          <input type="radio" name="theme" id="th-system" value="system" data-s="theme"><label for="th-system">System</label>
+        </div>
+      </div>
+      <div class="set-row"><span>Accentfärg</span>
+        <div class="swatches" role="radiogroup" aria-label="Accentfärg">
+          <input type="radio" name="accent" value="#1f7a5a" data-s="accent" aria-label="Grön" style="background:#1f7a5a">
+          <input type="radio" name="accent" value="#2459c9" data-s="accent" aria-label="Blå" style="background:#2459c9">
+          <input type="radio" name="accent" value="#d0592a" data-s="accent" aria-label="Orange" style="background:#d0592a">
+          <input type="radio" name="accent" value="#7a4cc2" data-s="accent" aria-label="Lila" style="background:#7a4cc2">
+          <input type="radio" name="accent" value="#c23b6b" data-s="accent" aria-label="Rosa" style="background:#c23b6b">
+        </div>
+      </div>
+      <div class="set-row"><span>Textstorlek<small id="fsLabel">16 px</small></span><input data-s="fontSize" type="range" min="13" max="21" step="1" aria-label="Textstorlek"></div>
+      <div class="set-row"><span>Kompakt läge<small>Mindre luft mellan saker</small></span><input data-s="compact" type="checkbox" class="switch"></div>
+      <div class="set-row"><span>Minska animationer</span><input data-s="reduceMotion" type="checkbox" class="switch"></div>
+    </div>
+
+    <div class="set-group">
+      <h3>Fokustimer</h3>
+      <div class="set-row"><span>Fokus (minuter)</span><input data-s="focusMin" type="number" min="1" max="180"></div>
+      <div class="set-row"><span>Kort paus (minuter)</span><input data-s="shortMin" type="number" min="1" max="60"></div>
+      <div class="set-row"><span>Lång paus (minuter)</span><input data-s="longMin" type="number" min="1" max="90"></div>
+      <div class="set-row"><span>Lång paus efter antal pass</span><input data-s="longEvery" type="number" min="2" max="10"></div>
+      <div class="set-row"><span>Starta nästa automatiskt</span><input data-s="autoNext" type="checkbox" class="switch"></div>
+      <div class="set-row"><span>Webbläsarnotiser<small>Få en notis när tiden är slut</small></span><input data-s="notifications" type="checkbox" class="switch"></div>
+    </div>
+
+    <div class="set-group">
+      <h3>Ljud och quiz</h3>
+      <div class="set-row"><span>Ljud</span><input data-s="sound" type="checkbox" class="switch"></div>
+      <div class="set-row"><span>Volym</span><input data-s="volume" type="range" min="0" max="1" step="0.05" aria-label="Volym"></div>
+      <div class="set-row"><span>Quiztid (sekunder)</span><input data-s="quizSeconds" type="number" min="10" max="600"></div>
+    </div>
+
+    <div class="set-group">
+      <h3>Kontroller</h3>
+      <div class="set-row"><span>Kortkommandon<small>Alt + siffra, mellanslag m.m.</small></span><input data-s="shortcuts" type="checkbox" class="switch"></div>
+      <div class="set-row"><span>Fråga innan radering</span><input data-s="confirmDelete" type="checkbox" class="switch"></div>
+    </div>
+
+    <div class="set-group">
+      <h3>Data</h3>
+      <p class="small muted">Allt sparas lokalt i din webbläsare. Exportera för att flytta till en annan dator.</p>
+      <div class="row wrap">
+        <button class="btn" id="exportData" type="button">Exportera</button>
+        <label class="btn" for="importFile" style="cursor:pointer">Importera</label><input type="file" id="importFile" accept="application/json" hidden>
+        <button class="btn danger" id="resetData" type="button">Rensa allt</button>
+      </div>
+    </div>
+  </div>
+</dialog>
+
+<!-- PALETTE -->
+<dialog id="palette" aria-label="Snabbsök">
+  <label class="sr-only" for="palInput">Sök</label>
+  <input id="palInput" class="pal-input" placeholder="Vart vill du gå?" autocomplete="off" role="combobox" aria-controls="palList" aria-expanded="true">
+  <ul class="pal-list" id="palList" role="listbox"></ul>
+</dialog>
+
+<!-- HELP -->
+<dialog id="help" aria-labelledby="h-help">
+  <div class="dlg">
+    <div class="dlg-head"><h2 id="h-help">Kortkommandon</h2><button class="icon-btn" data-close type="button" aria-label="Stäng"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button></div>
+    <table class="keys-table"><tbody>
+      <tr><td>Snabbsök</td><td><kbd>Ctrl</kbd> + <kbd>K</kbd></td></tr>
+      <tr><td>Byt verktyg</td><td><kbd>Alt</kbd> + <kbd>1</kbd>…<kbd>0</kbd></td></tr>
+      <tr><td>Nästa / föregående verktyg</td><td><kbd>Alt</kbd> + <kbd>↓</kbd> / <kbd>↑</kbd></td></tr>
+      <tr><td>Inställningar</td><td><kbd>,</kbd></td></tr>
+      <tr><td>Byt tema</td><td><kbd>D</kbd></td></tr>
+      <tr><td>Visa kortkommandon</td><td><kbd>?</kbd></td></tr>
+      <tr><td>Timer: starta/pausa · återställ</td><td><kbd>Mellanslag</kbd> · <kbd>R</kbd></td></tr>
+      <tr><td>Glosor: vänd · kunde · kunde inte</td><td><kbd>Mellanslag</kbd> · <kbd>→</kbd> · <kbd>←</kbd></td></tr>
+      <tr><td>Miniräknare</td><td>Skriv direkt</td></tr>
+    </tbody></table>
+  </div>
+</dialog>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(() => {
+'use strict';
+const $ = (s, r = document) => r.querySelector(s);
+const $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const PREFIX = 'plugghjalpen:';
+const load = (k, d) => { try { const v = localStorage.getItem(PREFIX + k); return v ? JSON.parse(v) : d; } catch { return d; } };
+const save = (k, v) => { try { localStorage.setItem(PREFIX + k, JSON.stringify(v)); } catch {} };
+const uid = () => Math.random().toString(36).slice(2, 10);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const pad = n => String(n).padStart(2, '0');
+const localDate = (d = new Date()) => `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`;
+const num = v => { const n = parseFloat(String(v).replace(/\s/g, '').replace(',', '.')); return Number.isFinite(n) ? n : NaN; };
+const fmt = (n, d = 6) => Number.isFinite(n) ? Number(n.toPrecision(12)).toLocaleString('sv-SE', { maximumFractionDigits: d }) : '–';
+const shuffle = a => { const b = [...a]; for (let i = b.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [b[i], b[j]] = [b[j], b[i]]; } return b; };
+const rand = (a, b) => Math.floor(Math.random() * (b - a + 1)) + a;
+const isTyping = el => !!(el && el.closest && el.closest('input, textarea, select, [contenteditable="true"]'));
+
+const ICONS = {
+  home: '<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/>',
+  timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M10 2h4"/>',
+  check: '<path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>',
+  note: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8"/>',
+  layers: '<path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5M2 12l10 5 10-5"/>',
+  brain: '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 8h3M9.5 6.5v3M14 8h3M7.5 15.5l3 3M10.5 15.5l-3 3M14 16h3M14 18.5h3"/>',
+  calc: '<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01M16 18h.01"/>',
+  swap: '<path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/>',
+  percent: '<path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/>',
+  shuffle: '<path d="M2 18h1.4c1.3 0 2.5-.6 3.3-1.7l6.1-8.6c.7-1.1 2-1.7 3.3-1.7H22"/><path d="m18 2 4 4-4 4M2 6h1.9c1.5 0 2.9.9 3.6 2.2M22 18h-5.9c-1.3 0-2.6-.7-3.3-1.8l-.5-.8M18 14l4 4-4 4"/>',
+  type: '<path d="M4 7V4h16v3M9 20h6M12 4v16"/>',
+  settings: '<path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M1 14h6M9 8h6M17 16h6"/>',
+  moon: '<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>',
+  sun: '<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>',
+  help: '<circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/>',
+  plus: '<path d="M12 5v14M5 12h14"/>',
+  x: '<path d="M18 6 6 18M6 6l12 12"/>',
+};
+const icon = n => `<svg class="i" viewBox="0 0 24 24" aria-hidden="true">${ICONS[n] || ''}</svg>`;
+
+const TOOLS = [
+  { id: 'start', name: 'Start', icon: 'home', desc: 'Översikt och snabbstart' },
+  { id: 'timer', name: 'Fokustimer', icon: 'timer', desc: 'Pomodoro med pauser' },
+  { id: 'tasks', name: 'Läxor', icon: 'check', desc: 'Uppgifter med ämne och datum' },
+  { id: 'notes', name: 'Anteckningar', icon: 'note', desc: 'Sparas automatiskt' },
+  { id: 'cards', name: 'Glosor', icon: 'layers', desc: 'Flashcards för förhör' },
+  { id: 'quiz', name: 'Mattequiz', icon: 'brain', desc: 'Huvudräkning på tid' },
+  { id: 'calc', name: 'Miniräknare', icon: 'calc', desc: 'Med historik och tangentbord' },
+  { id: 'convert', name: 'Omvandlare', icon: 'swap', desc: 'Längd, vikt, volym, tid m.m.' },
+  { id: 'percent', name: 'Procent', icon: 'percent', desc: 'Andel, förändring, rabatt' },
+  { id: 'random', name: 'Slump', icon: 'shuffle', desc: 'Namn, grupper, tärning' },
+  { id: 'text', name: 'Textanalys', icon: 'type', desc: 'Ord, lästid och LIX' },
+];
+const shortcutFor = i => i < 9 ? `Alt ${i + 1}` : i === 9 ? 'Alt 0' : '';
+
+/* ---------- Settings ---------- */
+const DEFAULTS = { name: '', theme: 'system', accent: '#1f7a5a', fontSize: 16, compact: false, reduceMotion: false, sound: true, volume: 0.5, notifications: false, shortcuts: true, startTool: 'start', rememberLast: true, focusMin: 25, shortMin: 5, longMin: 15, longEvery: 4, autoNext: false, quizSeconds: 60, confirmDelete: true };
+let S = { ...DEFAULTS, ...load('settings', {}) };
+const mq = matchMedia('(prefers-color-scheme: dark)');
+const isDark = () => S.theme === 'dark' || (S.theme === 'system' && mq.matches);
+
+function applySettings() {
+  const root = document.documentElement;
+  root.dataset.theme = isDark() ? 'dark' : 'light';
+  root.style.setProperty('--accent', S.accent);
+  root.style.setProperty('--fs', S.fontSize + 'px');
+  document.body.classList.toggle('compact', S.compact);
+  document.body.classList.toggle('no-motion', S.reduceMotion || matchMedia('(prefers-reduced-motion: reduce)').matches);
+  $('meta[name=theme-color]').content = isDark() ? '#121211' : '#f6f5f1';
+  $('#themeToggle').innerHTML = icon(isDark() ? 'sun' : 'moon');
+  $('#fsLabel').textContent = S.fontSize + ' px';
+}
+mq.addEventListener('change', applySettings);
+const saveSettings = () => save('settings', S);
+
+function toggleTheme() {
+  S.theme = isDark() ? 'light' : 'dark';
+  saveSettings(); applySettings(); syncSettingsForm();
+  toast(isDark() ? 'Mörkt tema' : 'Ljust tema');
+}
+
+function syncSettingsForm() {
+  $$('[data-s]').forEach(el => {
+    const k = el.dataset.s;
+    if (el.type === 'checkbox') el.checked = !!S[k];
+    else if (el.type === 'radio') el.checked = el.value === S[k];
+    else el.value = S[k];
+  });
+}
+
+/* ---------- Toast & sound ---------- */
+let toastTimer;
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+let actx;
+function tone(freq = 880, times = 1, len = 0.18, gap = 0.24) {
+  if (!S.sound || S.volume <= 0) return;
+  try {
+    actx = actx || new (window.AudioContext || window.webkitAudioContext)();
+    if (actx.state === 'suspended') actx.resume();
+    for (let i = 0; i < times; i++) {
+      const o = actx.createOscillator(), g = actx.createGain(), t = actx.currentTime + i * gap;
+      o.type = 'sine'; o.frequency.value = freq;
+      g.gain.setValueAtTime(0, t);
+      g.gain.linearRampToValueAtTime(S.volume * 0.35, t + 0.02);
+      g.gain.exponentialRampToValueAtTime(0.0001, t + len);
+      o.connect(g).connect(actx.destination); o.start(t); o.stop(t + len + 0.02);
+    }
+  } catch {}
+}
+const confirmDel = msg => !S.confirmDelete || confirm(msg);
+
+/* ---------- Navigation ---------- */
+let current = 'start';
+function renderNav() {
+  $('#nav').innerHTML = TOOLS.map((t, i) => `<button class="nav-item" type="button" data-go="${t.id}">${icon(t.icon)}<span>${t.name}</span>${shortcutFor(i) ? `<kbd>${shortcutFor(i)}</kbd>` : ''}</button>`).join('')
+    + `<div class="nav-sep"></div><button class="nav-item" type="button" data-action="settings">${icon('settings')}<span>Inställningar</span><kbd>,</kbd></button>`;
+  $('#toolGrid').innerHTML = TOOLS.slice(1).map((t, i) => `<button class="tool-card" type="button" data-go="${t.id}"><span class="ic">${icon(t.icon)}</span><strong>${t.name}${shortcutFor(i + 1) ? `<kbd>${shortcutFor(i + 1)}</kbd>` : ''}</strong><span class="small muted">${t.desc}</span></button>`).join('');
+  $('#startToolSel').innerHTML = TOOLS.map(t => `<option value="${t.id}">${t.name}</option>`).join('');
+}
+function go(id) {
+  if (!TOOLS.some(t => t.id === id)) id = 'start';
+  current = id;
+  $$('[data-tool]').forEach(s => { s.hidden = s.dataset.tool !== id; });
+  $$('#nav [data-go]').forEach(b => { if (b.dataset.go === id) b.setAttribute('aria-current', 'page'); else b.removeAttribute('aria-current'); });
+  $(`#nav [data-go="${id}"]`)?.scrollIntoView({ block: 'nearest', inline: 'nearest' });
+  save('last', id);
+  history.replaceState(null, '', '#' + id);
+  if (id === 'start') refreshStart();
+  if (id === 'cards' && cardTab === 'practice' && !fc.queue.length && !fc.finished) startPractice(false);
+  updateTitle();
+  window.scrollTo({ top: 0 });
+}
+function step(dir) { const i = TOOLS.findIndex(t => t.id === current); go(TOOLS[(i + dir + TOOLS.length) % TOOLS.length].id); }
+function updateTitle() {
+  const t = TOOLS.find(x => x.id === current);
+  document.title = T.running ? `${fmtTime(T.remaining)} · ${MODE_LABEL[T.mode]}` : `${t ? t.name + ' · ' : ''}Plugghjälpen`;
+}
+
+/* ---------- Start ---------- */
+function refreshStart() {
+  const h = new Date().getHours();
+  const hello = h < 5 ? 'God natt' : h < 10 ? 'God morgon' : h < 17 ? 'Hej' : h < 22 ? 'God kväll' : 'God natt';
+  $('#h-start').textContent = S.name ? `${hello}, ${S.name}!` : `${hello}!`;
+  const ds = new Date().toLocaleDateString('sv-SE', { weekday: 'long', day: 'numeric', month: 'long' });
+  $('#greetDate').textContent = ds;
+  const open = tasks.filter(t => !t.done);
+  const today = localDate();
+  const dueToday = open.filter(t => t.due && t.due <= today).length;
+  $('#stTasks').textContent = open.length;
+  $('#stTasksSub').textContent = dueToday ? `${dueToday} ska vara klara idag eller är sena` : open.length ? 'Inget som brådskar' : 'Allt klart – snyggt!';
+  $('#stFocus').textContent = stats.focus;
+  $('#stFocusSub').textContent = `${stats.focus * S.focusMin} minuter fokus`;
+  $('#stCards').textContent = parseCards(cardsText).length;
+  $('#stNotes').textContent = notes.length;
+}
+
+/* ---------- Timer ---------- */
+const MODE_LABEL = { focus: 'Fokus', short: 'Kort paus', long: 'Lång paus' };
+const CIRC = 2 * Math.PI * 96;
+let stats = load('stats', { date: localDate(), focus: 0, total: 0 });
+if (stats.date !== localDate()) { stats = { ...stats, date: localDate(), focus: 0 }; save('stats', stats); }
+const durFor = m => Math.max(1, Number({ focus: S.focusMin, short: S.shortMin, long: S.longMin }[m]) || 1) * 60;
+const T = { mode: 'focus', remaining: durFor('focus'), running: false, endAt: 0, iv: null };
+const fmtTime = s => `${pad(Math.floor(s / 60))}:${pad(s % 60)}`;
+
+function renderTimer() {
+  $('#timerDisplay').textContent = fmtTime(T.remaining);
+  $('#timerLabel').textContent = MODE_LABEL[T.mode] + (T.running ? '' : ' · pausad');
+  $('#ringFg').style.strokeDashoffset = CIRC * (1 - T.remaining / durFor(T.mode));
+  $('#ringFg').setAttribute('stroke-dasharray', CIRC);
+  $('#timerStart').textContent = T.running ? 'Pausa' : (T.remaining < durFor(T.mode) ? 'Fortsätt' : 'Starta');
+  $$('#timerModes button').forEach(b => b.setAttribute('aria-selected', b.dataset.mode === T.mode));
+  $('#sessionsToday').textContent = stats.focus;
+  $('#sessionsTotal').textContent = stats.total;
+  const every = Math.max(2, S.longEvery), done = stats.focus % every;
+  $('#timerDots').innerHTML = Array.from({ length: every }, (_, i) => `<i class="${i < done ? 'on' : ''}"></i>`).join('');
+  updateTitle();
+}
+function startTimer() {
+  if (T.running) return;
+  T.running = true; T.endAt = Date.now() + T.remaining * 1000;
+  T.iv = setInterval(tickTimer, 250); renderTimer();
+}
+function pauseTimer() {
+  if (!T.running) return;
+  T.running = false; clearInterval(T.iv);
+  T.remaining = Math.max(0, Math.ceil((T.endAt - Date.now()) / 1000)); renderTimer();
+}
+const toggleTimer = () => T.running ? pauseTimer() : startTimer();
+function setMode(m) { pauseTimer(); T.mode = m; T.remaining = durFor(m); renderTimer(); }
+function resetTimer() { pauseTimer(); T.remaining = durFor(T.mode); renderTimer(); }
+function tickTimer() {
+  T.remaining = Math.max(0, Math.ceil((T.endAt - Date.now()) / 1000));
+  if (T.remaining <= 0) finishTimer(true); else renderTimer();
+}
+function finishTimer(completed) {
+  clearInterval(T.iv); T.running = false;
+  let next;
+  if (T.mode === 'focus') {
+    if (completed) { stats.focus++; stats.total++; save('stats', stats); }
+    next = completed && stats.focus % Math.max(2, S.longEvery) === 0 ? 'long' : 'short';
+    if (completed) notify('Bra jobbat! Dags för paus.');
+  } else {
+    next = 'focus';
+    if (completed) notify('Pausen är slut – nu kör vi!');
+  }
+  if (completed) tone(880, 3);
+  T.mode = next; T.remaining = durFor(next); renderTimer();
+  if (completed && S.autoNext) startTimer();
+}
+function notify(msg) {
+  toast(msg);
+  if (S.notifications && 'Notification' in window && Notification.permission === 'granted') {
+    try { new Notification('Plugghjälpen', { body: msg }); } catch {}
+  }
+}
+$('#timerModes').addEventListener('click', e => { const b = e.target.closest('[data-mode]'); if (b) setMode(b.dataset.mode); });
+$('#timerStart').addEventListener('click', toggleTimer);
+$('#timerReset').addEventListener('click', resetTimer);
+$('#timerSkip').addEventListener('click', () => finishTimer(false));
+
+/* ---------- Tasks ---------- */
+let tasks = load('tasks', []);
+let taskFilter = 'active';
+const saveTasks = () => save('tasks', tasks);
+function dueInfo(due) {
+  if (!due) return null;
+  const diff = Math.round((new Date(due + 'T00:00') - new Date(localDate() + 'T00:00')) / 864e5);
+  if (diff < 0) return { label: `Försenad (${-diff} d)`, cls: 'warn' };
+  if (diff === 0) return { label: 'Idag', cls: 'warn' };
+  if (diff === 1) return { label: 'Imorgon', cls: 'accent' };
+  if (diff < 7) return { label: new Date(due + 'T00:00').toLocaleDateString('sv-SE', { weekday: 'long' }), cls: 'accent' };
+  return { label: new Date(due + 'T00:00').toLocaleDateString('sv-SE', { day: 'numeric', month: 'short' }), cls: '' };
+}
+function renderTasks() {
+  const list = tasks.filter(t => taskFilter === 'all' || (taskFilter === 'done' ? t.done : !t.done))
+    .sort((a, b) => (a.done - b.done) || ((a.due || '9999') < (b.due || '9999') ? -1 : (a.due || '9999') > (b.due || '9999') ? 1 : 0) || a.created - b.created);
+  $('#taskList').innerHTML = list.length ? list.map(t => {
+    const d = !t.done && dueInfo(t.due);
+    return `<li class="task${t.done ? ' done' : ''}" data-id="${t.id}">
+      <input type="checkbox" ${t.done ? 'checked' : ''} aria-label="Markera ${esc(t.text)} som klar">
+      <div class="t-body"><div class="t-text">${esc(t.text)}</div>
+        <div class="t-meta">${t.subject ? `<span class="chip">${esc(t.subject)}</span>` : ''}${d ? `<span class="chip ${d.cls}">${esc(d.label)}</span>` : ''}</div></div>
+      <button class="del" type="button" aria-label="Ta bort">${icon('x')}</button></li>`;
+  }).join('') : `<li class="empty">${taskFilter === 'done' ? 'Inga klara uppgifter än.' : 'Inget att göra – lägg till en läxa ovan.'}</li>`;
+  const open = tasks.filter(t => !t.done).length, done = tasks.length - open;
+  $('#taskSummary').textContent = tasks.length ? `${open} kvar att göra, ${done} klara.` : 'Inga läxor än.';
+  $('#taskCount').textContent = `${tasks.length} totalt`;
+  $$('#taskFilters button').forEach(b => b.setAttribute('aria-pressed', b.dataset.f === taskFilter));
+  $('#clearDone').disabled = !done;
+}
+$('#taskForm').addEventListener('submit', e => {
+  e.preventDefault();
+  const text = $('#taskText').value.trim(); if (!text) return;
+  tasks.push({ id: uid(), text, subject: $('#taskSubject').value.trim(), due: $('#taskDue').value, done: false, created: Date.now() });
+  saveTasks(); renderTasks();
+  $('#taskText').value = ''; $('#taskText').focus();
+  toast('Läxa tillagd');
+});
+$('#taskList').addEventListener('click', e => {
+  const li = e.target.closest('.task'); if (!li) return;
+  const t = tasks.find(x => x.id === li.dataset.id); if (!t) return;
+  if (e.target.matches('input[type=checkbox]')) { t.done = e.target.checked; if (t.done) tone(1320, 1, 0.12); }
+  else if (e.target.closest('.del')) { if (!confirmDel('Ta bort uppgiften?')) return; tasks = tasks.filter(x => x !== t); }
+  else return;
+  saveTasks(); renderTasks();
+});
+$('#taskFilters').addEventListener('click', e => { const b = e.target.closest('[data-f]'); if (b) { taskFilter = b.dataset.f; renderTasks(); } });
+$('#clearDone').addEventListener('click', () => { if (!confirmDel('Rensa alla klara uppgifter?')) return; tasks = tasks.filter(t => !t.done); saveTasks(); renderTasks(); });
+
+/* ---------- Notes ---------- */
+let notes = load('notes', null);
+if (!notes) notes = [{ id: uid(), title: 'Välkommen', body: 'Det här är dina anteckningar.\n\nAllt du skriver sparas automatiskt. Skapa nya med knappen till vänster.', updated: Date.now() }];
+let activeNote = load('activeNote', notes[0]?.id);
+const saveNotes = () => { save('notes', notes); save('activeNote', activeNote); };
+const getNote = () => notes.find(n => n.id === activeNote);
+function renderNoteList() {
+  const q = $('#noteSearch').value.trim().toLowerCase();
+  const list = [...notes].sort((a, b) => b.updated - a.updated).filter(n => !q || (n.title + ' ' + n.body).toLowerCase().includes(q));
+  $('#noteList').innerHTML = list.length ? list.map(n => `<li><button class="note-item" type="button" data-id="${n.id}" aria-current="${n.id === activeNote}"><b>${esc(n.title || 'Namnlös')}</b><small>${new Date(n.updated).toLocaleString('sv-SE', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' })}</small></button></li>`).join('') : '<li class="empty small">Inga träffar</li>';
+}
+function renderNoteEditor() {
+  const n = getNote();
+  const dis = !n;
+  $('#noteTitle').disabled = $('#noteBody').disabled = $('#noteDelete').disabled = $('#noteDownload').disabled = dis;
+  $('#noteTitle').value = n ? n.title : '';
+  $('#noteBody').value = n ? n.body : '';
+  updateNoteMeta();
+}
+function updateNoteMeta() {
+  const n = getNote();
+  if (!n) { $('#noteMeta').textContent = 'Ingen anteckning vald'; return; }
+  const words = (n.body.match(/[\p{L}\p{N}]+/gu) || []).length;
+  $('#noteMeta').textContent = `Sparad · ${words} ord · ${n.body.length} tecken`;
+}
+function newNote() {
+  const n = { id: uid(), title: '', body: '', updated: Date.now() };
+  notes.push(n); activeNote = n.id; saveNotes(); renderNoteList(); renderNoteEditor(); $('#noteTitle').focus();
+}
+$('#newNote').addEventListener('click', newNote);
+$('#noteSearch').addEventListener('input', renderNoteList);
+$('#noteList').addEventListener('click', e => { const b = e.target.closest('[data-id]'); if (!b) return; activeNote = b.dataset.id; saveNotes(); renderNoteList(); renderNoteEditor(); });
+['noteTitle', 'noteBody'].forEach(id => $('#' + id).addEventListener('input', () => {
+  const n = getNote(); if (!n) return;
+  n.title = $('#noteTitle').value; n.body = $('#noteBody').value; n.updated = Date.now();
+  saveNotes(); renderNoteList(); updateNoteMeta();
+}));
+$('#noteDelete').addEventListener('click', () => {
+  const n = getNote(); if (!n || !confirmDel(`Radera "${n.title || 'Namnlös'}"?`)) return;
+  notes = notes.filter(x => x !== n); activeNote = notes[0]?.id || null; saveNotes(); renderNoteList(); renderNoteEditor();
+});
+$('#noteDownload').addEventListener('click', () => {
+  const n = getNote(); if (!n) return;
+  const blob = new Blob([(n.title ? n.title + '\n\n' : '') + n.body], { type: 'text/plain;charset=utf-8' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = (n.title || 'anteckning').replace(/[^\p{L}\p{N} _-]/gu, '') + '.txt'; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+});
+
+/* ---------- Flashcards ---------- */
+let cardsText = load('cardsText', 'hund - dog\nkatt - cat\nhus - house\nbok - book\nskola - school\nvän - friend\nlärare - teacher\nfönster - window');
+const fc = { cards: [], queue: [], flipped: false, right: 0, wrong: 0, total: 0, finished: false };
+let cardTab = 'practice';
+function parseCards(text) {
+  return text.split('\n').map(l => l.trim()).filter(Boolean).map(l => {
+    const m = l.match(/^(.*?)\s*(?:\t|\s[-–—]\s|=|;|:)\s*(.+)$/);
+    return m && m[1] && m[2] ? { q: m[1].trim(), a: m[2].trim() } : null;
+  }).filter(Boolean);
+}
+function setCardTab(tab) {
+  cardTab = tab;
+  $$('#cardTabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === tab));
+  $('#cardEdit').hidden = tab !== 'edit';
+  $('#cardPractice').hidden = tab !== 'practice';
+  if (tab === 'practice') startPractice(false);
+}
+function startPractice(announce = true) {
+  fc.cards = parseCards(cardsText);
+  fc.queue = shuffle(fc.cards.map((_, i) => i));
+  fc.right = fc.wrong = 0; fc.total = fc.cards.length; fc.flipped = false; fc.finished = false;
+  renderCard();
+  if (announce && fc.total) toast('Korten är blandade');
+}
+function renderCard() {
+  const card = $('#flashcard');
+  const has = fc.queue.length > 0;
+  $('#fcWrong').disabled = $('#fcRight').disabled = !has;
+  const doneCount = fc.total - new Set(fc.queue).size;
+  $('#fcProgress').style.width = fc.total ? (doneCount / fc.total * 100) + '%' : '0';
+  if (!fc.total) {
+    $('#fcSide').textContent = 'Tomt'; $('#fcText').textContent = 'Inga glosor än';
+    $('#fcHint').textContent = 'Gå till Redigera och skriv in några'; $('#fcStatus').textContent = '';
+    card.classList.remove('flipped'); return;
+  }
+  if (!has) {
+    fc.finished = true;
+    $('#fcSide').textContent = 'Klart!';
+    $('#fcText').textContent = `${fc.right} av ${fc.right + fc.wrong} rätt`;
+    $('#fcHint').textContent = 'Tryck "Blanda och börja om" för att köra igen';
+    $('#fcStatus').textContent = `Alla ${fc.total} glosor klara`;
+    card.classList.add('flipped'); return;
+  }
+  const c = fc.cards[fc.queue[0]], rev = $('#fcReverse').checked;
+  const front = rev ? c.a : c.q, back = rev ? c.q : c.a;
+  card.classList.toggle('flipped', fc.flipped);
+  $('#fcSide').textContent = fc.flipped ? 'Svar' : 'Fråga';
+  $('#fcText').textContent = fc.flipped ? back : front;
+  $('#fcHint').textContent = fc.flipped ? front : 'Klicka eller tryck mellanslag för att vända';
+  $('#fcStatus').textContent = `${new Set(fc.queue).size} kvar · ${fc.right} rätt · ${fc.wrong} fel`;
+}
+function flipCard() {
+  if (!fc.queue.length) return;
+  fc.flipped = !fc.flipped;
+  const card = $('#flashcard'); card.classList.remove('pop'); void card.offsetWidth; card.classList.add('pop');
+  renderCard();
+}
+function answerCard(ok) {
+  if (!fc.queue.length) return;
+  const idx = fc.queue.shift();
+  if (ok) { fc.right++; tone(1046, 1, 0.12); } else { fc.wrong++; fc.queue.push(idx); tone(330, 1, 0.15); }
+  fc.flipped = false; renderCard();
+}
+function updateCardsCount() { const n = parseCards(cardsText).length; $('#cardsCount').textContent = `${n} glosor hittade`; }
+$('#cardsInput').value = cardsText;
+$('#cardsInput').addEventListener('input', e => { cardsText = e.target.value; save('cardsText', cardsText); updateCardsCount(); });
+$('#cardsStart').addEventListener('click', () => setCardTab('practice'));
+$('#cardTabs').addEventListener('click', e => { const b = e.target.closest('[data-tab]'); if (b) setCardTab(b.dataset.tab); });
+$('#flashcard').addEventListener('click', flipCard);
+$('#flashcard').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); flipCard(); } });
+$('#fcRight').addEventListener('click', () => answerCard(true));
+$('#fcWrong').addEventListener('click', () => answerCard(false));
+$('#fcRestart').addEventListener('click', () => startPractice(true));
+$('#fcReverse').addEventListener('change', () => { fc.flipped = false; renderCard(); });
+
+/* ---------- Quiz ---------- */
+const Q = { running: false, score: 0, left: 0, answer: null, iv: null };
+let bests = load('quizBests', {});
+const bestKey = () => `${$('#quizOp').value}-${$('#quizLevel').value}`;
+const showBest = () => { $('#quizBest').textContent = bests[bestKey()] || 0; };
+function genQuestion() {
+  const lvl = +$('#quizLevel').value;
+  let op = $('#quizOp').value;
+  if (op === 'mix') op = ['+', '-', '*', '/'][rand(0, 3)];
+  let a, b, ans, sym;
+  const R = { 1: [1, 10], 2: [2, 50], 3: [10, 500] }[lvl];
+  const M = { 1: [1, 10], 2: [2, 12], 3: [6, 25] }[lvl];
+  if (op === '+') { a = rand(...R); b = rand(...R); ans = a + b; sym = '+'; }
+  else if (op === '-') { a = rand(...R); b = rand(...R); if (lvl < 3 && b > a) [a, b] = [b, a]; ans = a - b; sym = '−'; }
+  else if (op === '*') { a = rand(...M); b = rand(...M); ans = a * b; sym = '×'; }
+  else { b = rand(...M); ans = rand(...M); a = b * ans; sym = '÷'; }
+  Q.answer = ans;
+  $('#quizQ').textContent = `${a} ${sym} ${b}`;
+}
+function startQuiz() {
+  clearInterval(Q.iv);
+  Q.running = true; Q.score = 0; Q.left = Math.max(10, +S.quizSeconds || 60);
+  $('#quizScore').textContent = 0; $('#quizTime').textContent = Q.left;
+  $('#quizInput').disabled = false; $('#quizInput').value = ''; $('#quizInput').focus();
+  $('#quizStart').textContent = 'Starta om';
+  $('#quizMsg').innerHTML = 'Tips: <kbd>Enter</kbd> hoppar över en fråga.';
+  genQuestion();
+  Q.iv = setInterval(() => { Q.left--; $('#quizTime').textContent = Q.left; if (Q.left <= 0) endQuiz(); }, 1000);
+}
+function endQuiz() {
+  clearInterval(Q.iv); Q.running = false;
+  $('#quizInput').disabled = true; $('#quizInput').value = '';
+  const k = bestKey(), rec = Q.score > (bests[k] || 0);
+  if (rec) { bests[k] = Q.score; save('quizBests', bests); }
+  $('#quizQ').textContent = rec ? 'Nytt rekord!' : 'Tiden är ute!';
+  $('#quizMsg').textContent = `Du fick ${Q.score} poäng.${rec ? ' Det är ditt bästa hittills på den här nivån.' : ''}`;
+  showBest(); tone(rec ? 1046 : 660, rec ? 3 : 2, 0.14, 0.16);
+}
+$('#quizStart').addEventListener('click', startQuiz);
+$('#quizInput').addEventListener('input', e => {
+  if (!Q.running) return;
+  const v = e.target.value.trim();
+  if (v !== '' && Number(v) === Q.answer) {
+    Q.score++; $('#quizScore').textContent = Q.score; e.target.value = '';
+    e.target.classList.remove('flash-ok'); void e.target.offsetWidth; e.target.classList.add('flash-ok');
+    tone(1046, 1, 0.08); genQuestion();
+  }
+});
+$('#quizInput').addEventListener('keydown', e => {
+  if (e.key !== 'Enter' || e.isComposing || e.keyCode === 229 || !Q.running) return;
+  e.preventDefault();
+  $('#quizMsg').textContent = `Svaret var ${Q.answer}.`;
+  e.target.value = ''; e.target.classList.remove('shake'); void e.target.offsetWidth; e.target.classList.add('shake');
+  tone(330, 1, 0.12); genQuestion();
+});
+['quizOp', 'quizLevel'].forEach(id => $('#' + id).addEventListener('change', showBest));
+
+/* ---------- Calculator ---------- */
+let expr = '', lastAns = 0;
+let calcHist = load('calcHistory', []);
+const KEYS = [['C', 'fn'], ['(', 'fn'], [')', 'fn'], ['⌫', 'fn'], ['√', 'op'], ['^', 'op'], ['%', 'op'], ['÷', 'op'], ['7'], ['8'], ['9'], ['×', 'op'], ['4'], ['5'], ['6'], ['−', 'op'], ['1'], ['2'], ['3'], ['+', 'op'], ['Ans', 'fn'], ['0'], [',', ''], ['=', 'eq']];
+$('#calcKeys').innerHTML = KEYS.map(([k, c]) => `<button type="button" class="${c || ''}" data-k="${k}" aria-label="${{ '⌫': 'Radera', 'C': 'Rensa', '√': 'Kvadratrot', '^': 'Upphöjt till', '=': 'Lika med' }[k] || k}">${k}</button>`).join('');
+function evaluate(src) {
+  let s = src.replace(/×/g, '*').replace(/÷/g, '/').replace(/−/g, '-').replace(/,/g, '.').replace(/\s+/g, '').replace(/Ans/g, '(' + lastAns + ')');
+  const open = (s.match(/\(/g) || []).length - (s.match(/\)/g) || []).length;
+  if (open > 0) s += ')'.repeat(open);
+  let p = 0;
+  const peek = () => s[p];
+  const expr_ = () => { let v = term(); while (peek() === '+' || peek() === '-') { const o = s[p++]; const r = term(); v = o === '+' ? v + r : v - r; } return v; };
+  const term = () => { let v = power(); while (peek() === '*' || peek() === '/' || peek() === '(' || peek() === '√') { const o = peek() === '*' || peek() === '/' ? s[p++] : '*'; const r = power(); v = o === '*' ? v * r : v / r; } return v; };
+  const power = () => { const v = unary(); if (peek() === '^') { p++; return Math.pow(v, power()); } return v; };
+  const unary = () => { if (peek() === '-') { p++; return -unary(); } if (peek() === '+') { p++; return unary(); } return postfix(); };
+  const postfix = () => { let v = primary(); while (peek() === '%') { p++; v /= 100; } return v; };
+  const primary = () => {
+    if (peek() === '√') { p++; return Math.sqrt(unary()); }
+    if (peek() === '(') { p++; const v = expr_(); if (peek() !== ')') throw 0; p++; return v; }
+    const m = /^(\d+\.?\d*(e[+-]?\d+)?|\.\d+)/i.exec(s.slice(p));
+    if (!m) throw 0; p += m[0].length; return parseFloat(m[0]);
+  };
+  const v = expr_();
+  if (p < s.length || !Number.isFinite(v)) throw 0;
+  return v;
+}
+function tryEval(s) { try { return s ? evaluate(s) : null; } catch { return null; } }
+function renderCalc() {
+  $('#calcExpr').textContent = expr || '0';
+  const v = tryEval(expr);
+  $('#calcPrev').textContent = v !== null && !/^[\d,]+$/.test(expr) ? '= ' + fmt(v, 10) : '';
+}
+function calcPress(k) {
+  if (k === 'C') expr = '';
+  else if (k === '⌫') expr = expr.endsWith('Ans') ? expr.slice(0, -3) : expr.slice(0, -1);
+  else if (k === '=') {
+    const v = tryEval(expr);
+    if (v === null) { if (expr) { $('#calcExpr').classList.remove('shake'); void $('#calcExpr').offsetWidth; $('#calcExpr').classList.add('shake'); } return; }
+    calcHist.unshift({ e: expr, r: v }); calcHist = calcHist.slice(0, 30); save('calcHistory', calcHist);
+    lastAns = v; expr = String(Number(v.toPrecision(12))).replace('.', ','); renderCalcHistory();
+  }
+  else expr += k;
+  renderCalc();
+}
+function renderCalcHistory() {
+  $('#calcHistory').innerHTML = calcHist.length ? calcHist.map((h, i) => `<li><button type="button" data-i="${i}"><small>${esc(h.e)}</small>= ${fmt(h.r, 10)}</button></li>`).join('') : '<li class="empty small">Dina uträkningar hamnar här</li>';
+}
+$('#calcKeys').addEventListener('click', e => { const b = e.target.closest('[data-k]'); if (b) calcPress(b.dataset.k); });
+$('#calcHistory').addEventListener('click', e => { const b = e.target.closest('[data-i]'); if (!b) return; const h = calcHist[+b.dataset.i]; expr += String(Number(h.r.toPrecision(12))).replace('.', ','); renderCalc(); });
+$('#calcClearHist').addEventListener('click', () => { calcHist = []; save('calcHistory', calcHist); renderCalcHistory(); });
+const CALC_MAP = { '*': '×', 'x': '×', '/': '÷', '-': '−', '.': ',', ',': ',', '+': '+', '(': '(', ')': ')', '^': '^', '%': '%', 'Enter': '=', '=': '=', 'Backspace': '⌫', 'Escape': 'C', 'Delete': 'C', 'r': '√' };
+function calcKey(e) {
+  const k = /^\d$/.test(e.key) ? e.key : CALC_MAP[e.key];
+  if (!k) return false;
+  e.preventDefault();
+  calcPress(k);
+  const btn = $(`#calcKeys [data-k="${k}"]`);
+  if (btn) { btn.style.background = 'var(--surface-2)'; setTimeout(() => (btn.style.background = ''), 120); }
+  return true;
+}
+
+/* ---------- Converter ---------- */
+const UNITS = {
+  length: { label: 'Längd', def: ['m', 'cm'], u: { mm: ['millimeter', 1e-3], cm: ['centimeter', 1e-2], dm: ['decimeter', 0.1], m: ['meter', 1], km: ['kilometer', 1e3], mil: ['mil', 1e4], in: ['tum', 0.0254], ft: ['fot', 0.3048], mi: ['engelsk mile', 1609.344] } },
+  mass: { label: 'Vikt', def: ['kg', 'g'], u: { mg: ['milligram', 1e-6], g: ['gram', 1e-3], hg: ['hektogram', 0.1], kg: ['kilogram', 1], t: ['ton', 1e3], lb: ['pound', 0.45359237], oz: ['ounce', 0.028349523125] } },
+  volume: { label: 'Volym', def: ['l', 'dl'], u: { ml: ['milliliter', 1e-3], cl: ['centiliter', 1e-2], dl: ['deciliter', 0.1], l: ['liter', 1], m3: ['kubikmeter', 1e3], cm3: ['kubikcentimeter', 1e-3], krm: ['kryddmått', 1e-3], tsk: ['tesked', 5e-3], msk: ['matsked', 15e-3] } },
+  area: { label: 'Area', def: ['m2', 'cm2'], u: { mm2: ['mm²', 1e-6], cm2: ['cm²', 1e-4], dm2: ['dm²', 1e-2], m2: ['m²', 1], a: ['ar', 100], ha: ['hektar', 1e4], km2: ['km²', 1e6] } },
+  time: { label: 'Tid', def: ['h', 'min'], u: { s: ['sekunder', 1], min: ['minuter', 60], h: ['timmar', 3600], d: ['dygn', 86400], w: ['veckor', 604800], y: ['år', 31557600] } },
+  speed: { label: 'Hastighet', def: ['kmh', 'ms'], u: { ms: ['m/s', 1], kmh: ['km/h', 1 / 3.6], mph: ['mph', 0.44704], kn: ['knop', 0.514444] } },
+  temp: { label: 'Temperatur', def: ['c', 'f'], u: { c: ['Celsius (°C)'], f: ['Fahrenheit (°F)'], k: ['Kelvin (K)'] } },
+};
+let convCat = load('convCat', 'length');
+function convert(v, from, to) {
+  if (convCat === 'temp') {
+    const c = from === 'c' ? v : from === 'f' ? (v - 32) * 5 / 9 : v - 273.15;
+    return to === 'c' ? c : to === 'f' ? c * 9 / 5 + 32 : c + 273.15;
+  }
+  const u = UNITS[convCat].u; return v * u[from][1] / u[to][1];
+}
+function setConvCat(cat) {
+  convCat = UNITS[cat] ? cat : 'length'; save('convCat', convCat);
+  const { u, def } = UNITS[convCat];
+  const opts = Object.entries(u).map(([k, [n]]) => `<option value="${k}">${n}</option>`).join('');
+  $('#convFrom').innerHTML = opts; $('#convTo').innerHTML = opts;
+  $('#convFrom').value = def[0]; $('#convTo').value = def[1];
+  $$('#convCats button').forEach(b => b.setAttribute('aria-selected', b.dataset.cat === convCat));
+  renderConv();
+}
+function renderConv() {
+  const v = num($('#convVal').value), from = $('#convFrom').value, to = $('#convTo').value, u = UNITS[convCat].u;
+  const r = convert(v, from, to);
+  $('#convOut').textContent = fmt(r, 8);
+  $('#convFormula').textContent = Number.isFinite(v) ? `${fmt(v, 8)} ${u[from][0]} = ${fmt(r, 8)} ${u[to][0]}` : 'Skriv ett tal';
+  $('#convAll').innerHTML = Object.entries(u).map(([k, [n]]) => `<div class="card"><p class="small muted">${n}</p><p class="mono" style="font-weight:700;overflow-wrap:anywhere">${fmt(convert(v, from, k), 8)}</p></div>`).join('');
+}
+$('#convCats').innerHTML = Object.entries(UNITS).map(([k, c]) => `<button role="tab" type="button" data-cat="${k}">${c.label}</button>`).join('');
+$('#convCats').addEventListener('click', e => { const b = e.target.closest('[data-cat]'); if (b) setConvCat(b.dataset.cat); });
+['convVal', 'convFrom', 'convTo'].forEach(id => $('#' + id).addEventListener('input', renderConv));
+$('#convSwap').addEventListener('click', () => { const f = $('#convFrom').value; $('#convFrom').value = $('#convTo').value; $('#convTo').value = f; renderConv(); });
+
+/* ---------- Percent ---------- */
+function renderPercent() {
+  const g = k => num($(`[data-p="${k}"]`).value);
+  const a1 = g('a1'), a2 = g('a2'), b1 = g('b1'), b2 = g('b2'), c1 = g('c1'), c2 = g('c2'), d1 = g('d1'), d2 = g('d2');
+  $('#pA').textContent = Number.isFinite(a1 * a2) ? fmt(a1 / 100 * a2, 4) : '–';
+  $('#pB').textContent = Number.isFinite(b1 / b2) && b2 ? fmt(b1 / b2 * 100, 3) + ' %' : '–';
+  if (Number.isFinite(c1) && Number.isFinite(c2) && c1) { const ch = (c2 - c1) / Math.abs(c1) * 100; $('#pC').textContent = (ch > 0 ? '+' : '') + fmt(ch, 2) + ' %'; } else $('#pC').textContent = '–';
+  $('#pD').textContent = Number.isFinite(d1 * d2) ? `${fmt(d1 * (1 - d2 / 100), 2)} (−${fmt(d1 * d2 / 100, 2)})` : '–';
+}
+$$('[data-p]').forEach(el => el.addEventListener('input', renderPercent));
+
+/* ---------- Random ---------- */
+$('#names').value = load('names', 'Alva\nNoah\nElsa\nLiam\nMaja\nHugo\nWilma\nOscar');
+let namePool = [];
+const getNames = () => $('#names').value.split('\n').map(s => s.trim()).filter(Boolean);
+$('#names').addEventListener('input', () => { save('names', $('#names').value); namePool = []; });
+function animatePick(el, options, final, cb) {
+  if (document.body.classList.contains('no-motion') || options.length < 2) { el.textContent = final; cb && cb(); return; }
+  let i = 0; const steps = 14;
+  const run = () => {
+    el.textContent = i < steps ? options[rand(0, options.length - 1)] : final;
+    if (i < steps) { i++; tone(600 + i * 20, 1, 0.03); setTimeout(run, 40 + i * 8); } else { cb && cb(); }
+  };
+  run();
+}
+$('#pickBtn').addEventListener('click', () => {
+  const names = getNames();
+  if (!names.length) { toast('Skriv in några namn först'); return; }
+  let pick;
+  if ($('#noRepeat').checked) {
+    if (!namePool.length) namePool = shuffle(names);
+    pick = namePool.pop();
+  } else pick = names[rand(0, names.length - 1)];
+  $('#pickBtn').disabled = true;
+  animatePick($('#pickResult'), names, pick, () => { $('#pickBtn').disabled = false; tone(1046, 2, 0.1, 0.12); });
+});
+$('#groupBtn').addEventListener('click', () => {
+  const names = shuffle(getNames());
+  if (!names.length) { toast('Skriv in några namn först'); return; }
+  const n = Math.max(1, parseInt($('#groupN').value) || 1);
+  const count = $('#groupMode').value === 'count' ? Math.min(n, names.length) : Math.max(1, Math.ceil(names.length / n));
+  const groups = Array.from({ length: count }, () => []);
+  names.forEach((nm, i) => groups[i % count].push(nm));
+  $('#groups').innerHTML = groups.map((g, i) => `<div class="group"><strong>Grupp ${i + 1}</strong><ol>${g.map(x => `<li>${esc(x)}</li>`).join('')}</ol></div>`).join('');
+});
+const PIPS = { 1: [4], 2: [0, 8], 3: [0, 4, 8], 4: [0, 2, 6, 8], 5: [0, 2, 4, 6, 8], 6: [0, 2, 3, 5, 6, 8] };
+const dieHtml = v => `<div class="die rolling" role="img" aria-label="${v}">${Array.from({ length: 9 }, (_, i) => `<i class="${PIPS[v].includes(i) ? 'on' : ''}"></i>`).join('')}</div>`;
+$('#diceBtn').addEventListener('click', () => {
+  const vals = Array.from({ length: +$('#diceCount').value }, () => rand(1, 6));
+  $('#dice').innerHTML = vals.map(dieHtml).join('');
+  $('#diceSum').textContent = vals.reduce((a, b) => a + b, 0);
+  tone(500, 2, 0.05, 0.08);
+});
+$('#rBtn').addEventListener('click', () => {
+  let a = parseInt($('#rMin').value), b = parseInt($('#rMax').value);
+  if (!Number.isFinite(a) || !Number.isFinite(b)) { toast('Ange två heltal'); return; }
+  if (a > b) [a, b] = [b, a];
+  const opts = Array.from({ length: 8 }, () => String(rand(a, b)));
+  animatePick($('#rResult'), opts, String(rand(a, b)));
+});
+$('#coinBtn').addEventListener('click', () => animatePick($('#rResult'), ['Krona', 'Klave'], Math.random() < 0.5 ? 'Krona' : 'Klave'));
+
+/* ---------- Text ---------- */
+$('#textIn').value = load('textDraft', '');
+function renderText() {
+  const t = $('#textIn').value; save('textDraft', t);
+  const words = t.match(/[\p{L}\p{N}][\p{L}\p{N}'’-]*/gu) || [];
+  const sentences = (t.match(/[^.!?]+[.!?]+|[^.!?]+$/g) || []).filter(s => /[\p{L}\p{N}]/u.test(s)).length;
+  const paras = t.split(/\n\s*\n/).filter(p => p.trim()).length;
+  const longW = words.filter(w => w.length > 6).length;
+  const lix = words.length && sentences ? Math.round(words.length / sentences + longW * 100 / words.length) : 0;
+  const lixLabel = !lix ? '–' : lix < 30 ? 'Mycket lätt' : lix < 40 ? 'Lätt' : lix < 50 ? 'Medelsvår' : lix < 60 ? 'Svår' : 'Mycket svår';
+  const read = Math.max(0, words.length / 200), speak = words.length / 130;
+  const mins = m => m < 1 ? `${Math.round(m * 60)} s` : `${Math.floor(m)} min ${Math.round((m % 1) * 60)} s`;
+  const longest = words.reduce((a, w) => w.length > a.length ? w : a, '');
+  const items = [
+    ['Ord', words.length], ['Tecken', t.length], ['Utan mellanslag', t.replace(/\s/g, '').length], ['Meningar', sentences],
+    ['Stycken', paras], ['Lästid', mins(read)], ['Taltid', mins(speak)], ['LIX', lix ? `${lix}` : '–', lixLabel],
+    ['Snitt ordlängd', words.length ? fmt(words.join('').length / words.length, 1) : '–'], ['Längsta ord', longest || '–'],
+  ];
+  $('#textStats').innerHTML = items.map(([l, v, sub]) => `<div class="card"><p class="small muted">${l}</p><p class="big-num" style="overflow-wrap:anywhere">${esc(v)}</p>${sub ? `<p class="small muted">${sub}</p>` : ''}</div>`).join('');
+  const freq = {};
+  words.forEach(w => { const k = w.toLowerCase(); if (k.length >= 4) freq[k] = (freq[k] || 0) + 1; });
+  const top = Object.entries(freq).sort((a, b) => b[1] - a[1]).slice(0, 8);
+  $('#topWords').innerHTML = top.length ? top.map(([w, c]) => `<span class="chip accent">${esc(w)} · ${c}</span>`).join('') : '<span class="small muted">Skriv lite text för att se de vanligaste orden (minst 4 bokstäver).</span>';
+}
+$('#textIn').addEventListener('input', renderText);
+$$('[data-tx]').forEach(b => b.addEventListener('click', async () => {
+  const ta = $('#textIn'), a = b.dataset.tx;
+  if (a === 'upper') ta.value = ta.value.toUpperCase();
+  else if (a === 'lower') ta.value = ta.value.toLowerCase();
+  else if (a === 'sentence') ta.value = ta.value.toLowerCase().replace(/(^\s*|[.!?]\s+)(\p{L})/gu, (m, p, c) => p + c.toUpperCase());
+  else if (a === 'copy') { try { await navigator.clipboard.writeText(ta.value); toast('Kopierat'); } catch { ta.select(); document.execCommand('copy'); toast('Kopierat'); } return; }
+  else if (a === 'clear') { if (!confirmDel('Rensa texten?')) return; ta.value = ''; }
+  renderText();
+}));
+
+/* ---------- Settings dialog ---------- */
+const settingsDlg = $('#settings'), helpDlg = $('#help'), palDlg = $('#palette');
+function openSettings() { syncSettingsForm(); settingsDlg.showModal(); }
+function openHelp() { helpDlg.showModal(); }
+$('#openSettings').addEventListener('click', openSettings);
+$('#openHelp').addEventListener('click', openHelp);
+$('#themeToggle').addEventListener('click', toggleTheme);
+$$('dialog').forEach(d => d.addEventListener('click', e => { if (e.target === d || e.target.closest('[data-close]')) d.close(); }));
+$$('[data-s]').forEach(el => el.addEventListener(el.type === 'text' || el.type === 'range' ? 'input' : 'change', async () => {
+  const k = el.dataset.s;
+  if (el.type === 'checkbox') S[k] = el.checked;
+  else if (el.type === 'radio') { if (!el.checked) return; S[k] = el.value; }
+  else if (el.type === 'number' || el.type === 'range') { const v = parseFloat(el.value); if (!Number.isFinite(v)) return; S[k] = v; }
+  else S[k] = el.value;
+  if (k === 'notifications' && S.notifications && 'Notification' in window && Notification.permission !== 'granted') {
+    const p = await Notification.requestPermission();
+    if (p !== 'granted') { S.notifications = false; el.checked = false; toast('Notiser blockerades av webbläsaren'); }
+  }
+  saveSettings(); applySettings();
+  if (['focusMin', 'shortMin', 'longMin'].includes(k) && !T.running) T.remaining = durFor(T.mode);
+  if (['focusMin', 'shortMin', 'longMin', 'longEvery'].includes(k)) renderTimer();
+  if (k === 'quizSeconds' && !Q.running) $('#quizTime').textContent = S.quizSeconds;
+  if (k === 'name') refreshStart();
+}));
+$('#exportData').addEventListener('click', () => {
+  const data = {};
+  for (let i = 0; i < localStorage.length; i++) { const k = localStorage.key(i); if (k.startsWith(PREFIX)) data[k] = localStorage.getItem(k); }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' }));
+  a.download = `plugghjalpen-${localDate()}.json`; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  toast('Data exporterad');
+});
+$('#importFile').addEventListener('change', async e => {
+  const f = e.target.files[0]; if (!f) return;
+  try {
+    const data = JSON.parse(await f.text());
+    Object.entries(data).forEach(([k, v]) => { if (k.startsWith(PREFIX) && typeof v === 'string') localStorage.setItem(k, v); });
+    location.reload();
+  } catch { toast('Kunde inte läsa filen'); }
+});
+$('#resetData').addEventListener('click', () => {
+  if (!confirm('Vill du verkligen radera ALLT – läxor, anteckningar, glosor och inställningar?')) return;
+  Object.keys(localStorage).filter(k => k.startsWith(PREFIX)).forEach(k => localStorage.removeItem(k));
+  location.hash = ''; location.reload();
+});
+
+/* ---------- Command palette ---------- */
+const ACTIONS = [
+  ...TOOLS.map(t => ({ label: t.name, hint: t.desc, icon: t.icon, run: () => go(t.id) })),
+  { label: 'Starta / pausa timer', hint: 'Fokustimer', icon: 'timer', run: () => { go('timer'); toggleTimer(); } },
+  { label: 'Ny läxa', hint: 'Läxor', icon: 'plus', run: () => { go('tasks'); $('#taskText').focus(); } },
+  { label: 'Ny anteckning', hint: 'Anteckningar', icon: 'plus', run: () => { go('notes'); newNote(); } },
+  { label: 'Starta mattequiz', hint: 'Mattequiz', icon: 'brain', run: () => { go('quiz'); startQuiz(); } },
+  { label: 'Kasta tärning', hint: 'Slump', icon: 'shuffle', run: () => { go('random'); $('#diceBtn').click(); } },
+  { label: 'Byt tema', hint: 'Ljust / mörkt', icon: 'moon', run: toggleTheme },
+  { label: 'Inställningar', hint: 'Anpassa allt', icon: 'settings', run: openSettings },
+  { label: 'Kortkommandon', hint: 'Hjälp', icon: 'help', run: openHelp },
+];
+let palItems = [], palSel = 0;
+function renderPalette() {
+  const q = $('#palInput').value.trim().toLowerCase();
+  palItems = ACTIONS.filter(a => !q || (a.label + ' ' + a.hint).toLowerCase().includes(q));
+  palSel = Math.min(palSel, Math.max(0, palItems.length - 1));
+  $('#palList').innerHTML = palItems.length ? palItems.map((a, i) => `<li role="option" id="pal-${i}" data-i="${i}" aria-selected="${i === palSel}">${icon(a.icon)}<span>${esc(a.label)}</span><small>${esc(a.hint)}</small></li>`).join('') : '<li class="empty">Inga träffar</li>';
+  $('#palInput').setAttribute('aria-activedescendant', palItems.length ? `pal-${palSel}` : '');
+  $(`#pal-${palSel}`)?.scrollIntoView({ block: 'nearest' });
+}
+function openPalette() { if (palDlg.open) return; $('#palInput').value = ''; palSel = 0; renderPalette(); palDlg.showModal(); $('#palInput').focus(); }
+function runPal(i) { const a = palItems[i]; if (!a) return; palDlg.close(); a.run(); }
+$('#openPalette').addEventListener('click', openPalette);
+$('#palInput').addEventListener('input', () => { palSel = 0; renderPalette(); });
+$('#palInput').addEventListener('keydown', e => {
+  if (e.key === 'ArrowDown') { e.preventDefault(); palSel = (palSel + 1) % Math.max(1, palItems.length); renderPalette(); }
+  else if (e.key === 'ArrowUp') { e.preventDefault(); palSel = (palSel - 1 + palItems.length) % Math.max(1, palItems.length); renderPalette(); }
+  else if (e.key === 'Enter' && !e.isComposing && e.keyCode !== 229) { e.preventDefault(); runPal(palSel); }
+});
+$('#palList').addEventListener('click', e => { const li = e.target.closest('[data-i]'); if (li) runPal(+li.dataset.i); });
+$('#palList').addEventListener('mousemove', e => { const li = e.target.closest('[data-i]'); if (li && +li.dataset.i !== palSel) { palSel = +li.dataset.i; renderPalette(); } });
+
+/* ---------- Global clicks & keys ---------- */
+document.addEventListener('click', e => {
+  const g = e.target.closest('[data-go]'); if (g) { go(g.dataset.go); return; }
+  if (e.target.closest('[data-action="settings"]')) openSettings();
+});
+document.addEventListener('keydown', e => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); palDlg.open ? palDlg.close() : openPalette(); return; }
+  if (!S.shortcuts) return;
+  if (e.altKey && !e.ctrlKey && !e.metaKey) {
+    const m = /^Digit(\d)$/.exec(e.code);
+    if (m) { e.preventDefault(); const i = m[1] === '0' ? 9 : +m[1] - 1; if (TOOLS[i]) go(TOOLS[i].id); return; }
+    if (e.key === 'ArrowDown') { e.preventDefault(); step(1); return; }
+    if (e.key === 'ArrowUp') { e.preventDefault(); step(-1); return; }
+  }
+  if (document.querySelector('dialog[open]') || e.ctrlKey || e.metaKey || e.altKey) return;
+  if (isTyping(e.target)) return;
+  if (current === 'calc' && calcKey(e)) return;
+  if (current === 'timer') {
+    if (e.code === 'Space') { e.preventDefault(); toggleTimer(); return; }
+    if (e.key.toLowerCase() === 'r') { resetTimer(); return; }
+  }
+  if (current === 'cards' && cardTab === 'practice') {
+    if (e.code === 'Space') { e.preventDefault(); flipCard(); return; }
+    if (e.key === 'ArrowRight') { e.preventDefault(); answerCard(true); return; }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); answerCard(false); return; }
+  }
+  if (e.key === '?') { openHelp(); return; }
+  if (e.key === ',') { openSettings(); return; }
+  if (e.key.toLowerCase() === 'd') { toggleTheme(); return; }
+});
+document.addEventListener('visibilitychange', () => { if (!document.hidden && T.running) tickTimer(); });
+window.addEventListener('hashchange', () => go(location.hash.slice(1)));
+
+/* ---------- Init ---------- */
+applySettings();
+renderNav();
+syncSettingsForm();
+renderTimer();
+renderTasks();
+renderNoteList(); renderNoteEditor();
+updateCardsCount(); setCardTab('practice');
+showBest(); $('#quizTime').textContent = S.quizSeconds;
+renderCalc(); renderCalcHistory();
+setConvCat(convCat);
+renderText();
+$('#diceBtn').click();
+const hash = location.hash.slice(1);
+go(TOOLS.some(t => t.id === hash) ? hash : (S.rememberLast ? load('last', S.startTool) : S.startTool));
+})();
+</script>
+</body>
+</html>
